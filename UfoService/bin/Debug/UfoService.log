@@ -1,0 +1,107 @@
+08.04.2020 12:30:45.192 - 1886207 -  Builded UfoSevice
+08.04.2020 12:30:45.245 - 1886207 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 12:30:45.253 - 1886207 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\06df72cf-20b0-4929-9abc-d958527e78fb.jpg -s F -y 1985
+08.04.2020 12:30:45.255 - 1886207 -  Job 06df72cf-20b0-4929-9abc-d958527e78fb started
+08.04.2020 12:30:56.370 - 1886207 -  Job 06df72cf-20b0-4929-9abc-d958527e78fb reading html
+08.04.2020 12:30:56.372 - 1886207 -  Job 06df72cf-20b0-4929-9abc-d958527e78fb sending html to client
+08.04.2020 12:30:56.397 - 1886207 -  Job 06df72cf-20b0-4929-9abc-d958527e78fb completed
+08.04.2020 12:30:59.458 - 1886207 -  Disposing UfoSevice
+08.04.2020 12:30:59.460 - 1886207 -  Closed UfoSevice
+08.04.2020 12:31:37.538 - 39280246 -  Builded UfoSevice
+08.04.2020 12:31:37.558 - 39280246 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 12:31:37.562 - 39280246 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\8f3d0407-3fea-4450-baa4-f0af140cbfd1.jpg -s F -y 1985
+08.04.2020 12:31:37.563 - 39280246 -  Job 8f3d0407-3fea-4450-baa4-f0af140cbfd1 started
+08.04.2020 12:31:38.543 - 22008501 -  Builded UfoSevice
+08.04.2020 12:31:38.565 - 22008501 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 12:31:38.568 - 22008501 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\a541a078-e857-4adb-aeb2-6e5c741d6fdf.jpg -s F -y 1986
+08.04.2020 12:31:38.569 - 22008501 -  Job a541a078-e857-4adb-aeb2-6e5c741d6fdf started
+08.04.2020 12:31:48.671 - 39280246 -  Job 8f3d0407-3fea-4450-baa4-f0af140cbfd1 reading html
+08.04.2020 12:31:48.674 - 39280246 -  Job 8f3d0407-3fea-4450-baa4-f0af140cbfd1 sending html to client
+08.04.2020 12:31:48.679 - 39280246 -  Job 8f3d0407-3fea-4450-baa4-f0af140cbfd1 completed
+08.04.2020 12:31:49.716 - 22008501 -  Job a541a078-e857-4adb-aeb2-6e5c741d6fdf reading html
+08.04.2020 12:31:49.718 - 22008501 -  Job a541a078-e857-4adb-aeb2-6e5c741d6fdf sending html to client
+08.04.2020 12:31:49.720 - 22008501 -  Job a541a078-e857-4adb-aeb2-6e5c741d6fdf completed
+08.04.2020 12:31:56.252 - 22008501 -  Disposing UfoSevice
+08.04.2020 12:31:56.273 - 22008501 -  Closed UfoSevice
+08.04.2020 12:31:56.282 - 39280246 -  Disposing UfoSevice
+08.04.2020 12:31:56.283 - 39280246 -  Closed UfoSevice
+08.04.2020 13:02:19.909 - 1216290 -  Builded UfoSevice
+08.04.2020 13:02:19.951 - 1216290 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 13:02:19.958 - 1216290 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\9c3c5859-f4a6-4f9c-9f0a-a16a4627cab1.jpg -s F -y 1985
+08.04.2020 13:02:19.959 - 1216290 -  Job 9c3c5859-f4a6-4f9c-9f0a-a16a4627cab1 started
+08.04.2020 13:02:29.426 - 1216290 -  Job 9c3c5859-f4a6-4f9c-9f0a-a16a4627cab1 cancelling
+08.04.2020 13:02:29.447 - 1216290 -  Job 9c3c5859-f4a6-4f9c-9f0a-a16a4627cab1 cancelled
+08.04.2020 13:02:33.175 - 1216290 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\81ed58b8-4879-4f51-9168-78344813c939.jpg -s F -y 1985
+08.04.2020 13:02:33.176 - 1216290 -  Job 81ed58b8-4879-4f51-9168-78344813c939 started
+08.04.2020 13:02:44.307 - 1216290 -  Job 81ed58b8-4879-4f51-9168-78344813c939 reading html
+08.04.2020 13:02:44.309 - 1216290 -  Job 81ed58b8-4879-4f51-9168-78344813c939 sending html to client
+08.04.2020 13:02:44.335 - 1216290 -  Job 81ed58b8-4879-4f51-9168-78344813c939 completed
+08.04.2020 13:03:43.264 - 1216290 -  Disposing UfoSevice
+08.04.2020 13:03:43.265 - 1216290 -  Closed UfoSevice
+08.04.2020 13:15:58.179 - 16868352 -  Builded UfoSevice
+08.04.2020 13:15:58.232 - 16868352 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 13:15:58.241 - 16868352 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\c80f2fe9-b090-405c-a678-10c6f9f65e1c.jpg -s F -y 1985
+08.04.2020 13:15:58.241 - 16868352 -  Job c80f2fe9-b090-405c-a678-10c6f9f65e1c started
+08.04.2020 13:16:04.010 - 16868352 -  Job c80f2fe9-b090-405c-a678-10c6f9f65e1c cancelling
+08.04.2020 13:16:04.024 - 16868352 -  Job c80f2fe9-b090-405c-a678-10c6f9f65e1c cancelled
+08.04.2020 13:16:07.698 - 16868352 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\28fb9b4c-71b3-4add-9fc0-57f44ffb9935.jpg -s F -y 1985
+08.04.2020 13:16:07.699 - 16868352 -  Job 28fb9b4c-71b3-4add-9fc0-57f44ffb9935 started
+08.04.2020 13:16:17.421 - 16868352 -  Job 28fb9b4c-71b3-4add-9fc0-57f44ffb9935 cancelling
+08.04.2020 13:16:17.425 - 16868352 -  Disposing UfoSevice
+08.04.2020 13:16:17.432 - 16868352 -  Job 28fb9b4c-71b3-4add-9fc0-57f44ffb9935 cancelled
+08.04.2020 13:16:17.436 - 16868352 -  Decrementing jobCount 16868352
+08.04.2020 13:16:17.437 - 16868352 -  Closed UfoSevice
+08.04.2020 13:16:43.839 - 62125865 -  Builded UfoSevice
+08.04.2020 13:16:43.839 - 62125865 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 13:16:43.844 - 62125865 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\3f23b6c7-bb78-4f5c-9e29-bbb44c737935.jpg -s F -y 1985 -n RUS
+08.04.2020 13:16:43.845 - 62125865 -  Job 3f23b6c7-bb78-4f5c-9e29-bbb44c737935 started
+08.04.2020 13:16:54.939 - 62125865 -  Job 3f23b6c7-bb78-4f5c-9e29-bbb44c737935 reading html
+08.04.2020 13:16:54.939 - 62125865 -  Job 3f23b6c7-bb78-4f5c-9e29-bbb44c737935 sending html to client
+08.04.2020 13:16:54.952 - 62125865 -  Job 3f23b6c7-bb78-4f5c-9e29-bbb44c737935 completed
+08.04.2020 13:18:19.972 - 62125865 -  Disposing UfoSevice
+08.04.2020 13:18:19.973 - 62125865 -  Closed UfoSevice
+08.04.2020 13:20:14.062 - 1216290 -  Builded UfoSevice
+08.04.2020 13:20:14.107 - 1216290 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 13:20:14.113 - 1216290 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\02a2b2a3-beda-4547-a3e1-9d7e8b84ea52.jpg -s F -y 1986 -n RUS
+08.04.2020 13:20:14.117 - 1216290 -  Job 02a2b2a3-beda-4547-a3e1-9d7e8b84ea52 started
+08.04.2020 13:20:25.234 - 1216290 -  Job 02a2b2a3-beda-4547-a3e1-9d7e8b84ea52 reading html
+08.04.2020 13:20:25.236 - 1216290 -  Job 02a2b2a3-beda-4547-a3e1-9d7e8b84ea52 sending html to client
+08.04.2020 13:20:25.259 - 1216290 -  Job 02a2b2a3-beda-4547-a3e1-9d7e8b84ea52 completed
+08.04.2020 13:21:04.067 - 1216290 -  Disposing UfoSevice
+08.04.2020 13:21:04.069 - 1216290 -  Closed UfoSevice
+08.04.2020 13:22:21.963 - 49147025 -  Builded UfoSevice
+08.04.2020 13:22:21.966 - 49147025 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 13:22:21.970 - 49147025 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\b78fe6d5-ece6-4b0d-a4da-c20d555a3d94.jpg -s F -y 1986
+08.04.2020 13:22:21.971 - 49147025 -  Job b78fe6d5-ece6-4b0d-a4da-c20d555a3d94 started
+08.04.2020 13:22:27.776 - 61667859 -  Builded UfoSevice
+08.04.2020 13:22:27.779 - 61667859 -  Successful access. Mashine name: SHARP, user name: DM\Молотков
+08.04.2020 13:22:27.782 - 61667859 -  Error max jobs count overload, count: 1
+08.04.2020 13:22:33.073 - 49147025 -  Job b78fe6d5-ece6-4b0d-a4da-c20d555a3d94 reading html
+08.04.2020 13:22:33.075 - 49147025 -  Job b78fe6d5-ece6-4b0d-a4da-c20d555a3d94 sending html to client
+08.04.2020 13:22:33.078 - 49147025 -  Job b78fe6d5-ece6-4b0d-a4da-c20d555a3d94 completed
+08.04.2020 13:22:35.076 - 61667859 -  cscript C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs C:\Projects\UFO\UFO\UfoService\WorkResult\f6557c2c-c134-4cd4-8adc-856b3caed978.jpg -s F -y 1985
+08.04.2020 13:22:35.076 - 61667859 -  Job f6557c2c-c134-4cd4-8adc-856b3caed978 started
+08.04.2020 13:22:46.204 - 61667859 -  Job f6557c2c-c134-4cd4-8adc-856b3caed978 reading html
+08.04.2020 13:22:46.205 - 61667859 -  Job f6557c2c-c134-4cd4-8adc-856b3caed978 sending html to client
+08.04.2020 13:22:46.211 - 61667859 -  Job f6557c2c-c134-4cd4-8adc-856b3caed978 completed
+08.04.2020 13:22:50.034 - 61667859 -  Disposing UfoSevice
+08.04.2020 13:22:50.039 - 61667859 -  Closed UfoSevice
+08.04.2020 13:22:51.608 - 49147025 -  Disposing UfoSevice
+08.04.2020 13:22:51.611 - 49147025 -  Closed UfoSevice
+06.05.2020 22:26:42.236 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.
+06.05.2020 22:33:24.862 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.
+06.05.2020 22:35:21.679 - HandleError: - ProtocolException - Безопасность потока требуется на http://www.w3.org/2005/08/addressing/anonymous, однако отсутствует согласование контекста безопасности. Возможно, это связано с отсутствием элемента StreamSecurityBindingElement в привязке удаленной конечной точки.
+06.05.2020 22:43:26.815 - HandleError: - ProtocolException - Безопасность потока требуется на http://www.w3.org/2005/08/addressing/anonymous, однако отсутствует согласование контекста безопасности. Возможно, это связано с отсутствием элемента StreamSecurityBindingElement в привязке удаленной конечной точки.
+06.05.2020 22:52:42.658 - HandleError: - ProtocolException - Безопасность потока требуется на http://www.w3.org/2005/08/addressing/anonymous, однако отсутствует согласование контекста безопасности. Возможно, это связано с отсутствием элемента StreamSecurityBindingElement в привязке удаленной конечной точки.
+06.05.2020 23:08:23.338 - HandleError: - ProtocolException - Безопасность потока требуется на http://www.w3.org/2005/08/addressing/anonymous, однако отсутствует согласование контекста безопасности. Возможно, это связано с отсутствием элемента StreamSecurityBindingElement в привязке удаленной конечной точки.
+06.05.2020 23:09:49.630 - HandleError: - ProtocolException - Безопасность потока требуется на http://www.w3.org/2005/08/addressing/anonymous, однако отсутствует согласование контекста безопасности. Возможно, это связано с отсутствием элемента StreamSecurityBindingElement в привязке удаленной конечной точки.
+06.05.2020 23:09:55.269 - HandleError: - ProtocolException - Безопасность потока требуется на http://www.w3.org/2005/08/addressing/anonymous, однако отсутствует согласование контекста безопасности. Возможно, это связано с отсутствием элемента StreamSecurityBindingElement в привязке удаленной конечной точки.
+06.05.2020 23:20:44.506 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.
+06.05.2020 23:23:19.350 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.
+06.05.2020 23:36:42.556 - HandleError: - ProtocolException - Безопасность потока требуется на http://www.w3.org/2005/08/addressing/anonymous, однако отсутствует согласование контекста безопасности. Возможно, это связано с отсутствием элемента StreamSecurityBindingElement в привязке удаленной конечной точки.
+06.05.2020 23:37:27.457 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.
+06.05.2020 23:44:30.411 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.
+06.05.2020 23:48:26.599 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.
+06.05.2020 23:48:58.674 - HandleError: - ProtocolException - Безопасность потока требуется на http://www.w3.org/2005/08/addressing/anonymous, однако отсутствует согласование контекста безопасности. Возможно, это связано с отсутствием элемента StreamSecurityBindingElement в привязке удаленной конечной точки.
+07.05.2020 00:00:39.654 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.
+07.05.2020 00:01:20.182 - HandleError: - FaultException - Сообщение с Кому "net.tcp://localhost:8700/UfoService/mex/mex" не может быть обработано на стороне получателя из-за несоответствия AddressFilter на EndpointDispatcher.  Проверьте согласованность адресов EndpointAddress на стороне отправителя и получателя.

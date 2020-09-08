@@ -1,0 +1,133 @@
+﻿<Window x:Class="UFO.SettingsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:conv="clr-namespace:UFO.Converters"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:p="clr-namespace:UFO.Properties"
+        xmlns:v="clr-namespace:UFO.ValidationRules"
+        Icon="/Icons/UFO.ico"
+        Foreground="{DynamicResource TextColor}"
+        Style="{StaticResource VS2012WindowStyle4}"
+        Title="УФО - Настройки подключения к БД" Height="370" Width="500"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <conv:BoolToBoolInverseConverter x:Key="boolToBoolInverseConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TabControl
+            SelectionChanged="TabControl_SelectionChanged">
+            <TabItem Name="MainTabItem"
+                     Header="Основная база данных">
+                <StackPanel>
+                    <DockPanel  Margin="55,30,55,0">
+                        <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145">Сервер:</TextBlock>
+                        <TextBox Margin="20,0,0,0" HorizontalAlignment="Stretch" Name="tbSqlServer"></TextBox>
+                    </DockPanel>
+                    <DockPanel  Margin="55,10,55,0">
+                        <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145">База данных:</TextBlock>
+                        <TextBox Margin="20,0,0,0" HorizontalAlignment="Stretch" Name="tbDatabaseName"></TextBox>
+                    </DockPanel>
+                    <DockPanel  Margin="55,10,55,0">
+                        <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145" >Логин:</TextBlock>
+                        <TextBox Margin="20,0,0,0" HorizontalAlignment="Stretch" Name="tbLogin" ></TextBox>
+                    </DockPanel>
+                    <DockPanel  Margin="55,10,55,0">
+                        <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145">Пароль:</TextBlock>
+                        <PasswordBox Margin="20,0,0,0" HorizontalAlignment="Stretch" Name="pbPassword"></PasswordBox>
+                    </DockPanel>
+                    
+                    <DockPanel  Margin="55,10,55,0">
+                        <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145">Не выводить индексы:</TextBlock>
+                        <TextBox Margin="20,0,0,0" 
+                         HorizontalAlignment="Stretch" 
+                         Name="tbIndex"
+                         Validation.Error="tbIndex_Error">
+                            <TextBox.Text>
+                                <Binding Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged"
+                                 ValidatesOnDataErrors="True"
+                                 NotifyOnValidationError="True"
+                                 Path="Indexes"
+                                 >
+                                    <Binding.ValidationRules>
+                                        <v:IndexInput/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                            <TextBox.Style>
+                                <Style  TargetType="{x:Type TextBox}" BasedOn="{StaticResource StandardTextBox}">
+                                    <!--<Setter Property="Validation.ErrorTemplate">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <DockPanel LastChildFill="True">
+                                            <Border BorderBrush="Red"
+                                                BorderThickness="2"
+                                                CornerRadius="5">
+                                                <AdornedElementPlaceholder />
+                                            </Border>
+                                            <TextBlock DockPanel.Dock="Right"
+                                       Foreground="Red"
+                                       FontSize="14"
+                                       Text="*" />
+                                        </DockPanel>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>-->
+                                    <Setter Property="ToolTip" Value="Не выводить индексы"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="Validation.HasError"  Value="True">
+                                            <Setter Property="ToolTip"
+                                            Value="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors)[0].ErrorContent}" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+
+                    </DockPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Name="KaskadTabItem" 
+                     Header="База данных 'Каскад'">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="55,33,55,0">
+                        <CheckBox Margin="0,0,0,0" HorizontalAlignment="Stretch" Name="IsKaskadDbUsedCheckBox"></CheckBox>
+                        <TextBlock Margin="10,0,0,0" FontSize="14" HorizontalAlignment="Left" Width="320">Использовать базу данных 'Каскад':</TextBlock>                        
+                    </StackPanel>
+                    <StackPanel IsEnabled="{Binding ElementName=IsKaskadDbUsedCheckBox, Path=IsChecked}">
+                        <DockPanel  Margin="55,10,55,0">
+                            <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145">Сервер:</TextBlock>
+                            <TextBox Margin="20,0,0,0" HorizontalAlignment="Stretch" Name="KaskadSqlServerTextBox"></TextBox>
+                        </DockPanel>
+                        <DockPanel  Margin="55,10,55,0">
+                            <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145">База данных:</TextBlock>
+                            <TextBox Margin="20,0,0,0" HorizontalAlignment="Stretch" Name="KaskadSqlDatabaseNameTextBox"></TextBox>
+                        </DockPanel>
+                        <DockPanel  Margin="55,10,55,0">
+                            <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145" >Логин:</TextBlock>
+                            <TextBox Margin="20,0,0,0" HorizontalAlignment="Stretch" Name="KaskadSqlLoginTextBox" ></TextBox>
+                        </DockPanel>
+                        <DockPanel  Margin="55,10,55,0">
+                            <TextBlock  FontSize="14" HorizontalAlignment="Left" Width="145">Пароль:</TextBlock>
+                            <PasswordBox Margin="20,0,0,0" HorizontalAlignment="Stretch" Name="KaskadSqlPasswordPasswordBox"></PasswordBox>
+                        </DockPanel>
+                    </StackPanel>                    
+                </StackPanel>                
+            </TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,20,53,0" HorizontalAlignment="Right">
+            <Button Name="btCheckConnection" Grid.Column="0" Width="150" Content="Проверить подключение" Click="BCheckConnection_Click"></Button>
+            <Button Grid.Column="0" Width="210" Content="Загрузить настройки по умолчанию" Click="BLoadDefaults_Click"  Margin="20,0,0,0"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,15,53,0" HorizontalAlignment="Right">
+            <Button Name="btSave" IsEnabled="False" Grid.Column="1" Width="80" Content="Сохранить" Margin="10,0,0,0" Height="22" VerticalAlignment="Top" Click="ButtonSave_Click"></Button>
+            <Button Grid.Column="2" Width="80" DockPanel.Dock="Right" Content="Отмена" Margin="10,0,0,0" Click="ButtonAbort_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

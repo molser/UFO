@@ -1,0 +1,36 @@
+﻿<Window x:Class="UFO.AboutProject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:conv="clr-namespace:UFO.Converters"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="УФО - О программе" 
+        Height="450" 
+        Width="600"
+        Icon="/Icons/UFO.ico"
+        Foreground="{DynamicResource TextColor}"
+        Style="{StaticResource VS2012WindowStyle4}"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <!--Row1-->
+        <Image Source="/Icons/page.png"/>
+        <!--Row2-->
+        <Rectangle Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="2" Margin="5,1,5,2" Fill="{DynamicResource NormalBorderBrush}" RadiusX="3" RadiusY="3"/>
+        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="50,0,30,0">
+            
+            <Label Foreground="{DynamicResource MenuTextColor}" FontSize="14" >УФО</Label>
+            <TextBlock Foreground="{DynamicResource TextColor}" Height="20" Text="{Binding AppVersionInfo}"></TextBlock>
+ 
+            <TextBlock Foreground="{DynamicResource TextColor}" Margin="0,8,0,0">
+                Программный комплекс УФО.
+            </TextBlock>
+        </StackPanel>
+        <!--Row3-->
+        <Rectangle Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="2" Margin="5,1,5,2" Fill="{DynamicResource NormalBorderBrush}" RadiusX="3" RadiusY="3"/>
+        <Button Grid.Row="2" HorizontalAlignment="Right" Margin="0,9,40,7" Content="Закрыть" Width="100" Click="ButtonClose_Click"></Button>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿Выполняется установка сборки 'M:\Projecs\UfoService\UfoService\UfoService\bin\Release\UfoPhotoSearchService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = M:\Projecs\UfoService\UfoService\UfoService\bin\Release\UfoPhotoSearchService.InstallLog
+   assemblypath = M:\Projecs\UfoService\UfoService\UfoService\bin\Release\UfoPhotoSearchService.exe
+Устанавливается служба UfoPhotoSearchService...
+Служба UfoPhotoSearchService успешно установлена.
+Создается исходный EventLog UfoPhotoSearchService в журнале Application...
+Выполняется фиксация сборки 'M:\Projecs\UfoService\UfoService\UfoService\bin\Release\UfoPhotoSearchService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = M:\Projecs\UfoService\UfoService\UfoService\bin\Release\UfoPhotoSearchService.InstallLog
+   assemblypath = M:\Projecs\UfoService\UfoService\UfoService\bin\Release\UfoPhotoSearchService.exe

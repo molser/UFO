@@ -1,0 +1,245 @@
+D:\Проекты\С#\UFO win7\UFO\bin\Release\UFO.exe.config
+D:\Проекты\С#\UFO win7\UFO\bin\Release\Help\ufohelp.CHM
+D:\Проекты\С#\UFO win7\UFO\bin\Release\UFO.exe
+D:\Проекты\С#\UFO win7\UFO\bin\Release\UFO.pdb
+D:\Проекты\С#\UFO win7\UFO\bin\Release\Xceed.Wpf.Toolkit.dll
+D:\Проекты\С#\UFO win7\UFO\obj\Release\Controls\MolserWait.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\App.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\AboutProject.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\Controls\MolserWait.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\DataBaseLink.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\DBConnectionSplashScreen.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\DetailPhotoView.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\MainWindow.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\PersonView.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\App.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO_Content.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO_MarkupCompile.cache
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO_MarkupCompile.lref
+D:\Проекты\С#\UFO win7\UFO\obj\Release\AboutProject.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\DataBaseLink.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\DBConnectionSplashScreen.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\DetailPhotoView.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\MainWindow.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\PersonView.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\Styles\CustomizedWindow\SharedDark.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\Styles\CustomizedWindow\Shared.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.baml
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO.g.resources
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO.Properties.Resources.resources
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO.csproj.GenerateResource.Cache
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO.exe
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO.pdb
+D:\Проекты\С#\UFO win7\UFO\obj\Release\UFO.csprojResolveAssemblyReference.cache
+C:\Projects\UfoClient\UFO\UFO\bin\Release\UFO.exe.config
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.exe
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.pdb
+C:\Projects\UfoClient\UFO\UFO\obj\Release\Controls\MolserWait.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\App.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\AboutProject.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\Controls\MolserWait.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\DataBaseLink.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\DBConnectionSplashScreen.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\DetailPhotoView.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\MainWindow.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\PersonView.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\App.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO_Content.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO_MarkupCompile.cache
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO_MarkupCompile.lref
+C:\Projects\UfoClient\UFO\UFO\bin\Release\Help\ufohelp.CHM
+C:\Projects\UfoClient\UFO\UFO\bin\Release\UFO.exe
+C:\Projects\UfoClient\UFO\UFO\bin\Release\UFO.pdb
+C:\Projects\UfoClient\UFO\UFO\bin\Release\Xceed.Wpf.Toolkit.dll
+C:\Projects\UfoClient\UFO\UFO\obj\Release\AboutProject.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\DataBaseLink.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\DBConnectionSplashScreen.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\DetailPhotoView.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\MainWindow.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\PersonView.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\Styles\CustomizedWindow\SharedDark.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\Styles\CustomizedWindow\Shared.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.g.resources
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.Properties.Resources.resources
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.csproj.GenerateResource.Cache
+C:\Projects\UfoClient\UFO\UFO\bin\Release\MolserControls.dll
+C:\Projects\UfoClient\UFO\UFO\bin\Release\MolserConverters.dll
+C:\Projects\UfoClient\UFO\UFO\bin\Release\MolserStyles40.dll
+C:\Projects\UfoClient\UFO\UFO\bin\Release\MolserConverters.pdb
+C:\Projects\UfoClient\UFO\UFO\obj\Release\ListView.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\PhotoSearchView.g.cs
+C:\Projects\UfoClient\UFO\UFO\obj\Release\ListView.baml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\PhotoSearchView.baml
+C:\Projects\UfoClient\UFO\UFO\bin\Release\UFO.exe.manifest
+C:\Projects\UfoClient\UFO\UFO\bin\Release\UFO.application
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.TrustInfo.xml
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.exe.manifest
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.application
+C:\Projects\UfoClient\UFO\UFO\bin\Release\Microsoft.Windows.Shell.dll
+C:\Projects\UfoClient\UFO\UFO\bin\Release\Microsoft.Windows.Shell.pdb
+\\sharp\c$\Projects\UfoClient\UFO\UFO\bin\Release\UFO.exe.config
+\\sharp\c$\Projects\UfoClient\UFO\UFO\obj\Release\UFO.exe
+\\sharp\c$\Projects\UfoClient\UFO\UFO\obj\Release\UFO.pdb
+C:\Projects\UfoClient\UFO\UFO\obj\Release\UFO.csprojResolveAssemblyReference.cache
+C:\Projects\UFO\UFO\UFO\bin\Release\UFO.exe.config
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.exe
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.pdb
+C:\Projects\UFO\UFO\UFO\bin\Release\Help\ufohelp.CHM
+C:\Projects\UFO\UFO\UFO\bin\Release\UFO.exe
+C:\Projects\UFO\UFO\UFO\bin\Release\UFO.pdb
+C:\Projects\UFO\UFO\UFO\bin\Release\Microsoft.Windows.Shell.dll
+C:\Projects\UFO\UFO\UFO\bin\Release\MolserControls.dll
+C:\Projects\UFO\UFO\UFO\bin\Release\MolserConverters.dll
+C:\Projects\UFO\UFO\UFO\bin\Release\Xceed.Wpf.Toolkit.dll
+C:\Projects\UFO\UFO\UFO\bin\Release\Microsoft.Windows.Shell.pdb
+C:\Projects\UFO\UFO\UFO\bin\Release\MolserConverters.pdb
+C:\Projects\UFO\UFO\UFO\obj\Release\Controls\MolserWait.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\App.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Controls\MolserWait.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\App.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO_MarkupCompile.cache
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO_MarkupCompile.lref
+C:\Projects\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\SharedDark.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\Shared.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.g.resources
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.Properties.Resources.resources
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.csproj.GenerateResource.Cache
+\\sharp\c$\Projects\UFO\UFO\UFO\bin\Release\UFO.exe.config
+\\sharp\c$\Projects\UFO\UFO\UFO\obj\Release\UFO.exe
+\\sharp\c$\Projects\UFO\UFO\UFO\obj\Release\UFO.pdb
+C:\Projects\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\MolSerDictionary.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\XceedWpfToolkitDictionary.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\AboutProject.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\PhotoFromDbView.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\SettingsView.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\DBConnectionSplashScreen.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\DetailPhotoView.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\ListView.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\MainWindow.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\PersonView.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\PhotoSearchView.g.cs
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\AboutProject.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\PhotoFromDbView.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\SettingsView.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\DBConnectionSplashScreen.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\DetailPhotoView.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\ListView.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\MainWindow.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\PersonView.baml
+C:\Projects\UFO\UFO\UFO\obj\Release\Views\PhotoSearchView.baml
+M:\Projecs\UFO\UFO\UFO\bin\Release\UFO.exe.config
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.exe
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.pdb
+M:\Projecs\UFO\UFO\UFO\bin\Release\Help\ufohelp.CHM
+M:\Projecs\UFO\UFO\UFO\bin\Release\UFO.exe.manifest
+M:\Projecs\UFO\UFO\UFO\bin\Release\UFO.application
+M:\Projecs\UFO\UFO\UFO\bin\Release\UFO.exe
+M:\Projecs\UFO\UFO\UFO\bin\Release\UFO.pdb
+M:\Projecs\UFO\UFO\UFO\bin\Release\Microsoft.Windows.Shell.dll
+M:\Projecs\UFO\UFO\UFO\bin\Release\MolserControls.dll
+M:\Projecs\UFO\UFO\UFO\bin\Release\MolserConverters.dll
+M:\Projecs\UFO\UFO\UFO\bin\Release\Xceed.Wpf.Toolkit.dll
+M:\Projecs\UFO\UFO\UFO\bin\Release\Microsoft.Windows.Shell.pdb
+M:\Projecs\UFO\UFO\UFO\bin\Release\MolserConverters.pdb
+M:\Projecs\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\MolSerDictionary.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\XceedWpfToolkitDictionary.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Controls\MolserWait.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\App.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\AboutProject.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Controls\MolserWait.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\PhotoFromDbView.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\SettingsView.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\DBConnectionSplashScreen.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\DetailPhotoView.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\ListView.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\MainWindow.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\PersonView.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\PhotoSearchView.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\App.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\GeneratedInternalTypeHelper.g.cs
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO_MarkupCompile.cache
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO_MarkupCompile.lref
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\AboutProject.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\PhotoFromDbView.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\SettingsView.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\DBConnectionSplashScreen.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\DetailPhotoView.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\ListView.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\MainWindow.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\PersonView.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Views\PhotoSearchView.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\SharedDark.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\Shared.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.baml
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.g.resources
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.Properties.Resources.resources
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.csproj.GenerateResource.Cache
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.TrustInfo.xml
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.exe.manifest
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.application
+M:\Projecs\UFO\UFO\UFO\obj\Release\UFO.csprojResolveAssemblyReference.cache
+C:\Projects\UFO\UFO\UFO\bin\Release\UFO.exe.manifest
+C:\Projects\UFO\UFO\UFO\bin\Release\UFO.application
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.TrustInfo.xml
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.exe.manifest
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.application
+C:\Projects\UFO\UFO\UFO\obj\Release\UFO.csprojResolveAssemblyReference.cache
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\UFO.exe.config
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.exe
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.pdb
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.csprojResolveAssemblyReference.cache
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Styles\CustomizedWindow\XceedWpfToolkitDictionary.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Controls\MolserWait.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\App.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\AboutProject.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Controls\MolserWait.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\SettingsView.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\DBConnectionSplashScreen.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\DetailPhotoView.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\MainWindow.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\PersonView.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\App.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\GeneratedInternalTypeHelper.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO_MarkupCompile.cache
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO_MarkupCompile.lref
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\Help\ufohelp.CHM
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\UFO.exe.manifest
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\UFO.application
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\UFO.exe
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\UFO.pdb
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\Microsoft.Windows.Shell.dll
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\MolserLib.dll
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\Xceed.Wpf.Toolkit.dll
+M:\Projecs\UFO\GitHub\UFO\UFO\bin\Release\Microsoft.Windows.Shell.pdb
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Styles\CustomizedWindow\MolSerDictionary.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\PhotoFromDbView.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\ListView.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\PhotoSearchView.g.cs
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\AboutProject.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\PhotoFromDbView.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\SettingsView.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\DBConnectionSplashScreen.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\DetailPhotoView.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\ListView.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\MainWindow.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\PersonView.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Views\PhotoSearchView.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Styles\CustomizedWindow\SharedDark.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Styles\CustomizedWindow\Shared.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\Styles\CustomizedWindow\VS2012WindowStyle.baml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.g.resources
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.Properties.Resources.resources
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.csproj.GenerateResource.Cache
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.TrustInfo.xml
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.exe.manifest
+M:\Projecs\UFO\GitHub\UFO\UFO\obj\Release\UFO.application

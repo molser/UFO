@@ -1,0 +1,740 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="http://schemas.xceed.com/wpf/xaml/toolkit"
+                    xmlns:themes="clr-namespace:Xceed.Wpf.Toolkit.Themes;assembly=Xceed.Wpf.Toolkit"
+                    xmlns:chrome="clr-namespace:Xceed.Wpf.Toolkit.Chromes;assembly=Xceed.Wpf.Toolkit"
+                    xmlns:conv="clr-namespace:Xceed.Wpf.Toolkit.Core.Converters;assembly=Xceed.Wpf.Toolkit"
+                    xmlns:dateConv="clr-namespace:Xceed.Wpf.Toolkit.Converters;assembly=Xceed.Wpf.Toolkit"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+
+
+    <conv:InverseBoolConverter x:Key="InverseBoolConverter" />
+    <conv:ObjectTypeToNameConverter x:Key="ObjectTypeToNameConverter" />
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    <!--<dateConv:BorderThicknessConverter x:Key="BorderThicknessConverter" />-->
+
+    <Geometry x:Key="UpArrowGeometry">M0,5 L4.5,.5 9,5 6,5 4.5,3.5 3,5 z</Geometry>
+    <Geometry x:Key="DownArrowGeometry">M0,0 L3,0 4.5,1.5 6,0 9,0 4.5,4.5 z</Geometry>
+
+    <DataTemplate x:Key="IncreaseGlyphNormalKey">
+        <Path Width="9"
+            Height="5"
+            Data="{StaticResource UpArrowGeometry}"
+            Fill="{DynamicResource {x:Static themes:ResourceKeys.GlyphNormalForegroundKey}}"
+            SnapsToDevicePixels="True"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Focusable="False" />
+    </DataTemplate>
+    <DataTemplate x:Key="IncreaseGlyphDisabledKey">
+        <Path	Width="9"
+            Height="5"
+            Data="{StaticResource UpArrowGeometry}"
+            Fill="{DynamicResource {x:Static themes:ResourceKeys.GlyphDisabledForegroundKey}}"
+            SnapsToDevicePixels="True"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Focusable="False" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="DecreaseGlyphNormalKey">
+        <Path Width="9"
+            Height="5"
+            Data="{StaticResource DownArrowGeometry}"
+            Fill="{DynamicResource {x:Static themes:ResourceKeys.GlyphNormalForegroundKey}}"
+            SnapsToDevicePixels="True"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Focusable="False" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="DecreaseGlyphDisabledKey">
+        <Path Width="9"
+            Height="5"
+            Data="{StaticResource DownArrowGeometry}"
+            Fill="{DynamicResource {x:Static themes:ResourceKeys.GlyphDisabledForegroundKey}}"
+            SnapsToDevicePixels="True"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Focusable="False" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="DefaultWatermarkTemplate">
+        <ContentControl Content="{Binding}"
+                        Foreground="{DynamicResource TextColor}"
+                        Focusable="False"
+                        Margin="0,0,3,0"
+                        Opacity="0.5"/>
+    </DataTemplate>
+
+
+    <!-- =============================================================================== -->
+    <!-- ButtonSpinner                                                                   -->
+    <!-- =============================================================================== -->
+
+    <Style x:Key="RepeatButtonSpinner" TargetType="{x:Type RepeatButton}" BasedOn="{x:Null}">
+        <!--<Setter Property="Height" Value="16"/>
+        <Setter Property="Width" Value="16"/>-->
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                    <ControlTemplate.Resources>
+                        <Geometry x:Key="arrow">M0,4 L4,0 L8,4 Z</Geometry>
+                    </ControlTemplate.Resources>
+                    <Border x:Name="brd" 
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Padding="0,4,0,4">
+                        <Grid>
+                            <Path x:Name="RepeatButtonArrow" 
+                                Fill="Gray" 
+                                Data="{StaticResource arrow}"
+                                StrokeStartLineCap="Round" 
+                                StrokeEndLineCap="Round" 
+                                Stretch="Uniform" 
+                                UseLayoutRounding="False"
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center"/>
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                        VerticalAlignment="Center" 
+                                        Content="{TemplateBinding Content}" 
+                                        ContentTemplate="{TemplateBinding ContentTemplate}" 
+                                        ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--<Setter TargetName="RepeatButtonArrow" Property="Fill" Value="White"/>-->
+                            <Setter TargetName="brd" Property="Background" Value="{DynamicResource GlyphBackgroundMouseOverBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <!--<Setter TargetName="RepeatButtonArrow" Property="Fill" Value="{StaticResource ScrollBarButtonMousePressedBrush}"/>-->
+                            <Setter TargetName="brd" Property="Background" Value="{DynamicResource SolidBorderBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="RepeatButtonArrow" Property="Fill" Value="LightGray"/>
+                            <!--<Setter TargetName="RepeatButtonArrow" Property="Opacity" Value="0.72"/>-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:ButtonSpinner}">
+        <!--<Setter Property="Background" Value="{DynamicResource {x:Static themes:ResourceKeys.ControlNormalBackgroundKey}}" />
+        <Setter Property="BorderBrush"  Value="{DynamicResource {x:Static themes:ResourceKeys.ControlNormalBorderKey}}" />-->
+        <Setter Property="Background" Value="{DynamicResource TextBoxBackgroundBrush}" />
+        <Setter Property="BorderBrush"  Value="{DynamicResource TextColor}" />
+        <Setter Property="BorderThickness"  Value="1" />
+        <Setter Property="Padding"  Value="1" />
+        <Setter Property="Focusable" Value="False" />
+        <Setter Property="HorizontalContentAlignment"  Value="Stretch" />
+        <Setter Property="IsTabStop" Value="True" />
+        <Setter Property="VerticalContentAlignment"  Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ButtonSpinner}">
+                    <Border x:Name="Border"
+                              SnapsToDevicePixels="True"
+                              Background="{TemplateBinding Background}"
+                              BorderBrush="{TemplateBinding BorderBrush}"
+                              BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition x:Name="firstContentColumn"
+                                  Width="*" />
+                                <ColumnDefinition x:Name="secondContentColumn"
+                                  Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <ContentPresenter x:Name="contentPresenter"
+                                Focusable="False"
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                            <Grid x:Name="gridContent"
+                                    Grid.Column="1"
+                                    Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <RepeatButton x:Name="PART_IncreaseButton"
+                                      Style="{StaticResource RepeatButtonSpinner}"
+                                      IsTabStop="{TemplateBinding IsTabStop}">
+                                </RepeatButton>
+                                <RepeatButton x:Name="PART_DecreaseButton"
+                                        Grid.Row="1"
+                                        Style="{StaticResource RepeatButtonSpinner}"
+                                        IsTabStop="{TemplateBinding IsTabStop}">
+                                    <RepeatButton.LayoutTransform>
+                                        <RotateTransform Angle="180"/>
+                                    </RepeatButton.LayoutTransform>
+                                </RepeatButton>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="ShowButtonSpinner" Value="False">
+                            <Setter Property="Visibility" Value="Hidden" TargetName="gridContent" />
+                            <Setter Property="Width" Value="0" TargetName="gridContent" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                            <!--<Setter Property="Background" Value="{DynamicResource {x:Static themes:ResourceKeys.ControlDisabledBackgroundKey}}" />-->
+                        </Trigger>
+                        <!--<Trigger SourceName="PART_IncreaseButton" Property="IsEnabled" Value="False">
+                            <Setter TargetName="PART_IncreaseButton" Property="ContentTemplate" Value="{StaticResource IncreaseGlyphDisabledKey}" />
+                        </Trigger>
+                        <Trigger SourceName="PART_DecreaseButton" Property="IsEnabled" Value="False">
+                            <Setter TargetName="PART_DecreaseButton" Property="ContentTemplate" Value="{StaticResource DecreaseGlyphDisabledKey}" />
+                        </Trigger>-->
+                        <Trigger Property="ButtonSpinnerLocation" Value="Left">
+                            <Setter TargetName="firstContentColumn" Property="Width" Value="Auto" />
+                            <Setter TargetName="secondContentColumn" Property="Width" Value="*" />
+                            <Setter TargetName="contentPresenter" Property="Grid.Column" Value="1" />
+                            <Setter TargetName="gridContent" Property="Grid.Column" Value="0" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- =============================================================================== -->
+    <!-- WatermarkTextBox                                                                -->
+    <!-- =============================================================================== -->
+
+    <Style x:Key="WatermarkTextBox"
+         TargetType="{x:Type local:WatermarkTextBox}">
+        <!--<Setter Property="Foreground"  Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
+        <Setter Property="BorderBrush"  Value="{DynamicResource {x:Static themes:ResourceKeys.ControlNormalBorderKey}}" />-->
+        <Setter Property="Foreground"  Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />
+        <Setter Property="Background" Value="{StaticResource TextBoxBackgroundBrush}" />
+        <Setter Property="BorderBrush"  Value="{StaticResource LightBorderBrush}" />
+        <Setter Property="BorderThickness"  Value="1" />
+        <Setter Property="Padding" Value="3" />
+        <Setter Property="AllowDrop"  Value="true" />
+        <Setter Property="FocusVisualStyle"  Value="{x:Null}" />
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst" />
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+        <Setter Property="WatermarkTemplate" Value="{StaticResource DefaultWatermarkTemplate}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:WatermarkTextBox}">
+                    <Grid>
+                        <Border x:Name="Border"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                CornerRadius="0"
+                                Background="{TemplateBinding Background}">
+                            <Grid>
+                                <ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                                </ScrollViewer>
+                                <ContentPresenter x:Name="PART_WatermarkHost"
+                                      Content="{TemplateBinding Watermark}"
+                                      ContentTemplate="{Binding WatermarkTemplate, RelativeSource={RelativeSource TemplatedParent}, TargetNullValue={StaticResource DefaultWatermarkTemplate}}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      IsHitTestVisible="False"
+                                      Margin="{TemplateBinding Padding}"
+                                      Visibility="Collapsed" />
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="KeepWatermarkOnGotFocus" Value="False" />
+                                <Condition Property="IsFocused" Value="False" />
+                                <Condition Property="Text" Value="" />
+                            </MultiTrigger.Conditions>
+                            <MultiTrigger.Setters>
+                                <Setter Property="Visibility" TargetName="PART_WatermarkHost" Value="Visible" />
+                            </MultiTrigger.Setters>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="KeepWatermarkOnGotFocus"  Value="True" />
+                                <Condition Property="Text" Value="" />
+                            </MultiTrigger.Conditions>
+                            <MultiTrigger.Setters>
+                                <Setter Property="Visibility" TargetName="PART_WatermarkHost" Value="Visible" />
+                            </MultiTrigger.Setters>
+                        </MultiTrigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--<Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource {x:Static themes:ResourceKeys.ControlMouseOverBorderKey}}" />-->
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource SolidBorderBrush}" />
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource TextBoxInActiveBackground}"/>
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocusWithin"  Value="True">
+                            <!--<Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource {x:Static themes:ResourceKeys.ControlSelectedBorderKey}}" />-->
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource SolidBorderBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <!--<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />-->
+                            <Setter Property="Foreground" Value="{StaticResource DisabledForegroundBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type local:WatermarkTextBox}"  BasedOn="{StaticResource WatermarkTextBox}" />
+
+
+
+    <Style x:Key="TimePickerToggleButtonStyle" TargetType="ToggleButton">
+        <Setter Property="Template">
+            <Setter.Value>                
+                <ControlTemplate  TargetType="ToggleButton">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="24" />
+                        </Grid.ColumnDefinitions>
+                        <Border
+                            Grid.ColumnSpan="2"
+                            BorderThickness="0"
+                            Background="{Binding Background, RelativeSource={RelativeSource TemplatedParent}}"/>
+                        <Border 
+                                x:Name="ArrowBorder"
+                                Grid.Column="1"
+                                Margin="2"
+                                BorderThickness="0"
+                                Background="{Binding Background, RelativeSource={RelativeSource TemplatedParent}}">
+                            <Path 
+                                x:Name="Arrow"                    
+                                Fill="{StaticResource GlyphBrush}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Data="M 0 0 L 4 4 L 8 0 Z"/>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="ToggleButton.IsMouseOver" Value="true">
+                            <Setter TargetName="ArrowBorder" Property="Background" Value="{DynamicResource GlyphBackgroundMouseOverBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                            <Setter TargetName="Arrow" Property="Fill" Value="{DynamicResource DisabledForegroundBrush}" />
+                        </Trigger>
+                        <Trigger Property="ToggleButton.IsChecked" Value="true">
+                            <Setter TargetName="ArrowBorder" Property="Background" Value="{DynamicResource ComboxItemBackgroundBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- =============================================================================== -->
+    <!-- TimePicker                                                                      -->
+    <!-- =============================================================================== -->
+
+    <Style TargetType="{x:Type local:TimePicker}">
+        <!--<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource {x:Static themes:ResourceKeys.ControlNormalBorderKey}}" />-->
+        <Setter Property="Background" Value="{DynamicResource TextBoxBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextColor}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource LightBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1,1,0,1" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="HorizontalContentAlignment" Value="Right" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="TextAlignment" Value="Right" />
+        <Setter Property="WatermarkTemplate" Value="{StaticResource DefaultWatermarkTemplate}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:TimePicker}">
+                    <Border x:Name="Border"
+                            Background="{DynamicResource TextBoxBackgroundBrush}"
+                            BorderBrush="{DynamicResource LightBorderBrush}"
+                            BorderThickness="1">
+                        <Grid x:Name="root">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <local:ButtonSpinner x:Name="PART_Spinner"
+                                 IsTabStop="False"
+                                 Background="Transparent"
+                                 BorderThickness="0"
+                                 HorizontalContentAlignment="Stretch"
+                                 VerticalContentAlignment="Stretch"
+                                 BorderBrush="{TemplateBinding BorderBrush}"
+                                 ButtonSpinnerLocation="{TemplateBinding ButtonSpinnerLocation}"
+                                 AllowSpin="{TemplateBinding AllowSpin}"
+                                 ShowButtonSpinner="{TemplateBinding ShowButtonSpinner}">
+                                <local:WatermarkTextBox x:Name="PART_TextBox"
+                                      BorderThickness="0"
+                                      Background="Transparent"
+                                      CaretBrush="{DynamicResource TextBoxCaret}"
+                                      FontFamily="{TemplateBinding FontFamily}"
+                                      FontSize="{TemplateBinding FontSize}"
+                                      FontStretch="{TemplateBinding FontStretch}"
+                                      FontStyle="{TemplateBinding FontStyle}"
+                                      FontWeight="{TemplateBinding FontWeight}"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      IsUndoEnabled="{Binding IsUndoEnabled, RelativeSource={RelativeSource TemplatedParent}}"
+                                      IsTabStop="True"                                      
+                                      AcceptsReturn="False"
+                                      Padding="{TemplateBinding Padding}"
+                                      TextAlignment="{TemplateBinding TextAlignment}"
+                                      TextWrapping="NoWrap"
+                                      Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}"
+                                      TabIndex="{TemplateBinding TabIndex}"
+                                      Watermark="{TemplateBinding Watermark}"
+                                      WatermarkTemplate="{TemplateBinding WatermarkTemplate}" />
+                            </local:ButtonSpinner>
+                            <Border Grid.Column="1"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    Padding="0">
+                                <ToggleButton x:Name="_timePickerToggleButton"
+                                    Background="{DynamicResource TextBoxBackgroundBrush}"
+                                    Focusable="False"
+                                    IsChecked="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}}"
+                                    Style="{StaticResource TimePickerToggleButtonStyle}"
+                                    IsHitTestVisible="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}}"
+                                    IsEnabled="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}}"
+                                    Visibility="{TemplateBinding ShowDropDownButton, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                </ToggleButton>
+                            </Border>
+                            <Popup x:Name="PART_Popup"
+                                IsOpen="{Binding IsChecked, ElementName=_timePickerToggleButton}"
+                                AllowsTransparency="True"
+                                StaysOpen="False"
+                                ToolTip="{x:Static sys:String.Empty}">
+                                <Popup.Resources>
+                                    <Style TargetType="ToolTip">
+                                        <Style.Triggers>
+                                            <Trigger Property="Content" Value="{x:Static sys:String.Empty}">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Popup.Resources>
+                                <Border BorderThickness="0"
+                                    MinWidth="{Binding ActualWidth, ElementName=root}"
+                                    MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                                    Background="{DynamicResource TextBoxBackgroundBrush}"
+                                    BorderBrush="{StaticResource SolidBorderBrush}">
+                                    <Grid>
+                                        <ListBox x:Name="PART_TimeListItems"
+                                            BorderThickness="0"
+                                            DisplayMemberPath="Display"
+                                            ItemContainerStyle="{StaticResource StandardListBoxItem}">
+                                            <ListBox.Style>
+                                                <Style TargetType="ListBox" BasedOn="{StaticResource StandardListBox}">
+                                                    <Setter Property="Foreground" Value="Red"/>
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="ListBox">
+                                                                <Border Name="Border"
+                                                                    BorderThickness="1"
+                                                                    CornerRadius="2"
+                                                                    BorderBrush="{DynamicResource SolidBorderBrush}">
+                                                                    <Border.Background>
+                                                                        <SolidColorBrush Color="{DynamicResource ControlLightColor}" />
+                                                                    </Border.Background>
+                                                                    <ScrollViewer Margin="0" Focusable="false">
+                                                                        <StackPanel Margin="2" IsItemsHost="True" />
+                                                                    </ScrollViewer>
+                                                                </Border>
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsEnabled"  Value="false">
+                                                                        <Setter TargetName="Border" Property="Background">
+                                                                            <Setter.Value>
+                                                                                <SolidColorBrush Color="{DynamicResource DisabledControlLightColor}" />
+                                                                            </Setter.Value>
+                                                                        </Setter>
+                                                                        <Setter TargetName="Border" Property="BorderBrush">
+                                                                            <Setter.Value>
+                                                                                <SolidColorBrush Color="{DynamicResource DisabledBorderLightColor}" />
+                                                                            </Setter.Value>
+                                                                        </Setter>
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsGrouping" Value="true">
+                                                                        <Setter Property="ScrollViewer.CanContentScroll" Value="false" />
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </ListBox.Style>
+                                        </ListBox>
+                                    </Grid>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">                            
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource SolidBorderBrush}" />
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource TextBoxInActiveBackground}"/>
+                        </Trigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsReadOnly, RelativeSource={RelativeSource Self}}" Value="False" />
+                                <Condition Binding="{Binding AllowTextInput, RelativeSource={RelativeSource Self}}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="IsReadOnly" Value="True" TargetName="PART_TextBox" />
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding IsReadOnly, RelativeSource={RelativeSource Self}}" Value="True">
+                            <Setter Property="IsReadOnly" Value="True" TargetName="PART_TextBox" />
+                        </DataTrigger>
+                        <Trigger Property="IsKeyboardFocusWithin"  Value="True">                           
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource SolidBorderBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter TargetName="PART_TextBox" Property="FocusManager.FocusedElement" Value="{Binding ElementName=PART_TextBox}" />
+                        </Trigger>
+                        <!--ToggleButton can be closed when TimePicker is included in DateTimePicker-->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding TemplatedParent, 
+                                                             RelativeSource={RelativeSource Self}, 
+                                                            Converter={StaticResource ObjectTypeToNameConverter}}"
+                                            Value="DateTimePicker" />
+                                <Condition Binding="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="IsHitTestVisible" Value="True" TargetName="_timePickerToggleButton" />
+                        </MultiDataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <Style x:Key="DateTimePickerToggleButtonStyle" TargetType="ToggleButton">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border x:Name="Border"                            
+                                        BorderBrush="{DynamicResource LightBorderBrush}"
+                                        BorderThickness="1"
+                                        Width="19"
+                                        Height="18">
+                        <Grid x:Name="CalendarGrid"
+                              Background="{DynamicResource TextBoxBackgroundBrush}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="5*"/>
+                            </Grid.RowDefinitions>
+                            <Border x:Name="CalendarHeader"
+                                                Grid.Row="0"
+                                                BorderThickness="0"
+                                                Background="#FF9BC0FF"
+                                                Padding="0">
+                                <Ellipse x:Name="Elipse" 
+                                                    Fill="{DynamicResource TextBoxBackgroundBrush}" 
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Width="3"
+                                                    Height="3"/>
+                            </Border>
+                            <Border x:Name="DateBorder"
+                                                Grid.Row="1"
+                                                Background="Transparent"
+                                                BorderThickness="0"
+                                                VerticalAlignment="Top"
+                                                Padding="0">
+                                <TextBlock x:Name="CalendarText"
+                                                     Foreground="{DynamicResource TextBoxFont}"
+                                                     Text="15" 
+                                                     Margin="0,-1,0,0"
+                                                     FontSize="9"
+                                                     HorizontalAlignment="Center"
+                                                     VerticalAlignment="Top"/>
+                                <!--Text="{Binding Value, StringFormat=\{0:dd\}, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:DateTimePicker}}"-->
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource SolidBorderBrush}" />                            
+                            <Setter TargetName="CalendarGrid" Property="Background" Value="{DynamicResource TextBoxInActiveBackground}"/>
+                            <!--<Setter TargetName="CalendarHeader" Property="Stroke" Value="{StaticResource SolidBorderBrush}" />-->
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <!--<Setter TargetName="DateBorder" Property="Background" Value="{DynamicResource DarkBrush}" />-->
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource SolidBorderBrush}" />
+                            <!--<Setter TargetName="Elipse" Property="Fill" Value="{DynamicResource DarkBrush}" />-->
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="CalendarHeader" Property="Background" Value="{DynamicResource DisabledBackgroundBrush}"/>
+                            <Setter TargetName="CalendarText" Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- =============================================================================== -->
+    <!-- DateTimePicker                                                                  -->
+    <!-- =============================================================================== -->
+
+    <Style x:Key="StandardDateTimePicker" TargetType="{x:Type local:DateTimePicker}">
+        <Setter Property="Background" Value="{DynamicResource TextBoxBackgroundBrush}" />
+        <Setter Property="BorderBrush"  Value="{DynamicResource TextBoxBackgroundBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Foreground" Value="{DynamicResource TextColor}" />
+        <Setter Property="HorizontalContentAlignment" Value="Right" />
+        <Setter Property="TextAlignment" Value="Right" />
+        <Setter Property="TimeWatermarkTemplate" Value="{StaticResource DefaultWatermarkTemplate}" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="WatermarkTemplate" Value="{StaticResource DefaultWatermarkTemplate}" />
+        <Setter Property="CalendarWidth" Value="200" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:DateTimePicker}">
+                    <Border x:Name="Border"
+                        Background="{DynamicResource TextBoxBackgroundBrush}"
+                        BorderBrush="{DynamicResource LightBorderBrush}"
+                        BorderThickness="1"
+                        Padding="4,0,4,0">
+                        <Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <local:ButtonSpinner x:Name="PART_Spinner"
+                                    IsTabStop="False"
+                                    Background="Transparent"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="0"
+                                    ButtonSpinnerLocation="{TemplateBinding ButtonSpinnerLocation}"
+                                    HorizontalContentAlignment="Stretch"
+                                    VerticalContentAlignment="Stretch"
+                                    AllowSpin="{TemplateBinding AllowSpin}"
+                                    ShowButtonSpinner="{TemplateBinding ShowButtonSpinner}">
+                                    <local:WatermarkTextBox x:Name="PART_TextBox"
+                                        BorderThickness="0"                                        
+                                        Background="Transparent"
+                                        CaretBrush="{DynamicResource TextBoxCaret}"
+                                        FontFamily="{TemplateBinding FontFamily}"
+                                        FontSize="{TemplateBinding FontSize}"
+                                        FontStretch="{TemplateBinding FontStretch}"
+                                        FontStyle="{TemplateBinding FontStyle}"
+                                        FontWeight="{TemplateBinding FontWeight}"
+                                        Foreground="{TemplateBinding Foreground}"
+                                        HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                        VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                        IsUndoEnabled="{Binding IsUndoEnabled, RelativeSource={RelativeSource TemplatedParent}}"
+                                        IsTabStop="True"
+                                        AcceptsReturn="False"                                        
+                                        Padding="{TemplateBinding Padding}"
+                                        TextAlignment="{TemplateBinding TextAlignment}"
+                                        TextWrapping="NoWrap"
+                                        Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}"
+                                        TabIndex="{TemplateBinding TabIndex}"
+                                        Watermark="{TemplateBinding Watermark}"
+                                        WatermarkTemplate="{TemplateBinding WatermarkTemplate}" />
+                                </local:ButtonSpinner>
+                                <ToggleButton x:Name="_calendarToggleButton"
+                                    Grid.Column="1"
+                                    Background="White"
+                                    Focusable="False"
+                                    Margin="2"
+                                    VerticalAlignment="Center"
+                                    IsChecked="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}}"
+                                    Style="{StaticResource DateTimePickerToggleButtonStyle}"
+                                    IsHitTestVisible="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}}"
+                                    IsEnabled="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}}"
+                                    Visibility="{TemplateBinding ShowDropDownButton, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                </ToggleButton>
+                            </Grid>
+                            <Popup x:Name="PART_Popup"
+                                    IsOpen="{Binding IsChecked, ElementName=_calendarToggleButton}"
+                                    StaysOpen="False"
+                                    ToolTip="{x:Static sys:String.Empty}">
+                                <Popup.Resources>
+                                    <Style TargetType="ToolTip">
+                                        <Style.Triggers>
+                                            <Trigger Property="Content" Value="{x:Static sys:String.Empty}">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Popup.Resources>
+                                <Border BorderThickness="1"
+                                        Background="{DynamicResource TextBoxBackgroundBrush}"
+                                        BorderBrush="{DynamicResource SolidBorderBrush}"
+                                        Padding="1">
+                                    <StackPanel>
+                                        <Calendar x:Name="PART_Calendar"
+                                            BorderThickness="0"
+                                            DisplayMode="{Binding CalendarDisplayMode, RelativeSource={RelativeSource TemplatedParent}}">
+                                        </Calendar>
+                                        <local:TimePicker x:Name="PART_TimeUpDown"                                            
+                                            Foreground="{DynamicResource TextColor}"
+                                            Format="{TemplateBinding TimeFormat}"
+                                            FormatString="{TemplateBinding TimeFormatString}"
+                                            Kind="{Binding Kind, RelativeSource={RelativeSource TemplatedParent}}"
+                                            Value="{Binding Value, RelativeSource={RelativeSource TemplatedParent}}"
+                                            Minimum="{Binding Minimum, RelativeSource={RelativeSource TemplatedParent}}"
+                                            Maximum="{Binding Maximum, RelativeSource={RelativeSource TemplatedParent}}"
+                                            ClipValueToMinMax="{Binding ClipValueToMinMax, RelativeSource={RelativeSource TemplatedParent}}"
+                                            IsUndoEnabled="{Binding IsUndoEnabled, RelativeSource={RelativeSource TemplatedParent}}"
+                                            AllowSpin="{TemplateBinding TimePickerAllowSpin}"
+                                            Step="{TemplateBinding Step}"
+                                            ShowButtonSpinner="{TemplateBinding TimePickerShowButtonSpinner}"
+                                            Watermark="{TemplateBinding TimeWatermark}"
+                                            WatermarkTemplate="{TemplateBinding TimeWatermarkTemplate}"
+                                            Visibility="{TemplateBinding TimePickerVisibility}" />
+                                    </StackPanel>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsReadOnly, RelativeSource={RelativeSource Self}}" Value="False" />
+                                <Condition Binding="{Binding AllowTextInput, RelativeSource={RelativeSource Self}}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="IsReadOnly" Value="True" TargetName="PART_TextBox" />
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding IsReadOnly, RelativeSource={RelativeSource Self}}" Value="True">
+                            <Setter Property="IsReadOnly" Value="True" TargetName="PART_TextBox" />
+                        </DataTrigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource SolidBorderBrush}" />
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource TextBoxInActiveBackground}"/>
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocusWithin"  Value="True">
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource SolidBorderBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type local:DateTimePicker}" BasedOn="{StaticResource StandardDateTimePicker}"/>
+
+</ResourceDictionary>

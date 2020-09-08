@@ -1,0 +1,479 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:UFO.Styles.CustomizedWindow"
+    >
+
+    <!--xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:controls="clr-namespace:System.Windows;assembly=PresentationFramework">-->
+
+
+    <SolidColorBrush x:Key="TitleBarBackgroundBrush" Color="#FF2D2D30" />
+    <SolidColorBrush x:Key="VS2012WindowBorderBrush" Color="#FF007ACC" />
+    <SolidColorBrush x:Key="VS2012WindowBorderBrushInactive" Color="#999999" />
+    <SolidColorBrush x:Key="VS2012WindowStatusForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="VS2012WindowStatusForegroundInactive" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="VS2012WindowTitleTextBrush" Color="White" />
+    
+    <!--Кастомизация окон-->
+    <SolidColorBrush x:Key="PanelBrush" Color="#FF252526"/>
+    <SolidColorBrush x:Key="PhotoBorderBrush" Color="#FF686868"/>
+    <SolidColorBrush x:Key="TextColor" Color="#FFC7C7C7"/>
+    <SolidColorBrush x:Key="MenuTextColor" Color="White"/>
+    <SolidColorBrush x:Key="WindowTitleBarButtonForeground" Color="#FFF1F1F1"/>
+    <SolidColorBrush x:Key="WindowTitleBarButtonPressed" Color="#FF007ACC"/>
+    <SolidColorBrush x:Key="TextBoxInActiveBackground" Color="#FF3F3F46"/>
+    <SolidColorBrush x:Key="TextBoxFont" Color="WhiteSmoke"/>
+    <SolidColorBrush x:Key="TextBoxCaret" Color="White"/>
+    <SolidColorBrush x:Key="DataGridBorderBrush" Color="#FF686868"/>
+    <SolidColorBrush x:Key="DataGridBorderBackground" Color="#FF252526"/>
+    <SolidColorBrush x:Key="MenuItemCheckMarkColor" Color="#FF252526"/>
+
+    <!--<SolidColorBrush x:Key="TextBoxBorderInActive" Color="#FF007ACC"/>-->
+    
+
+    <!-- Fill Brushes -->
+
+    <SolidColorBrush x:Key="NormalBrush" Color="#FF242527" />
+    <SolidColorBrush x:Key="HorizontalNormalBrush" Color="#CCC" />
+    <SolidColorBrush x:Key="LightBrush" Color="#FF252526" />
+    <SolidColorBrush x:Key="HorizontalLightBrush" Color="#EEE" />
+    <SolidColorBrush x:Key="DarkBrush" Color="#FF404040" />
+    <SolidColorBrush x:Key="PressedBrush" Color="#FF007ACC" />
+    <SolidColorBrush x:Key="DisabledForegroundBrush" Color="#888" />
+    <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#FF252526" />
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#FFF6FAFF" />
+    <SolidColorBrush x:Key="SelectedBackgroundBrush" Color="#DDD" />
+    <SolidColorBrush x:Key="TextBoxBackgroundBrush" Color="#FF333337" />
+    <SolidColorBrush x:Key="ComboxItemBackgroundBrush" Color="#FF1B1B1C" />
+    <SolidColorBrush x:Key="ComboxSelectedItemBackgroundBrush" Color="#FF00AEFF" />
+
+    <SolidColorBrush x:Key="DataGridBackgroundBrush" Color="DimGray" />
+    <SolidColorBrush x:Key="DataGridColumnHeaderBackgroundBrush" Color="#FF3E3E42" />
+    <SolidColorBrush x:Key="DataGridHeaderMouseOverBrush" Color="#FF686868" />
+    <SolidColorBrush x:Key="DataGridRowMouseOverBrush" Color="#FF3E3E42" />
+    <SolidColorBrush x:Key="DataGridRowHeaderBackgroundBrush" Color="#FF333333" />
+    <SolidColorBrush x:Key="DataGridRowHeaderSelectedBackgroundBrush" Color="#FF007ACC" />
+    <SolidColorBrush x:Key="DataGridLinesBrush" Color="#FF686868" />
+    <SolidColorBrush x:Key="DataGridSelectedCellBrush" Color="#FF007ACC" />
+    <SolidColorBrush x:Key="DataGridInActiveSelectedCellBrush" Color="#FFA0C7E2" />
+
+    <SolidColorBrush x:Key="ScrollBarBackgroundBrush" Color="DimGray" />
+    <SolidColorBrush x:Key="ScrollBarButtonBackgroundBrush" Color="#FF2D2D30" />
+    <SolidColorBrush x:Key="ScrollBarButtonMouseOverBackgroundBrush" Color="#FF00AEFF" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundBrush" Color="#FF2D2D30" />
+    <SolidColorBrush x:Key="ScrollBarThumbPressedBackgroundBrush" Color="Black" />
+    <SolidColorBrush x:Key="ScrollBarDisabledBackgroundBrush" Color="LightGray" />
+    <SolidColorBrush x:Key="ScrollBarButtonMousePressedBrush" Color="#FF00AEFF" />
+    <SolidColorBrush x:Key="ScrollBarMouseOverArrowBrush" Color="DarkGray" />
+
+    
+
+    <!--<SolidColorBrush x:Key="NormalBrushScrollBar" Color="#FFCCCCCC"/>
+    <SolidColorBrush x:Key="HoverBrushScrollBar" Color="#FF2CC8C8"/>
+    <SolidColorBrush x:Key="DisabledBrushScrollBar" Color="#FFAAAAAA"/>-->
+
+    <!-- Border Brushes -->
+
+    <SolidColorBrush x:Key="NormalBorderBrush" Color="#FF939393" />
+    <SolidColorBrush x:Key="HorizontalNormalBorderBrush" Color="#444" />
+    <SolidColorBrush x:Key="DefaultedBorderBrush" Color="#FF616161" />
+    <SolidColorBrush x:Key="PressedBorderBrush" Color="#FF007ACC" />
+    <SolidColorBrush x:Key="DisabledBorderBrush" Color="#FF3F3F46" />
+    <SolidColorBrush x:Key="SolidBorderBrush" Color="#FF007ACC" />
+    <SolidColorBrush x:Key="LightBorderBrush" Color="#FF707070" />
+    <SolidColorBrush x:Key="VeryLightBorderBrush" Color="#242527" />
+    <SolidColorBrush x:Key="DataGridHeaderBorderBrush" Color="#FF686868" />
+    <SolidColorBrush x:Key="DataGridSelectedCellBorderBrush" Color="#FF003AFF" />
+    
+    
+
+
+    <!-- Miscellaneous Brushes -->
+    <SolidColorBrush x:Key="GlyphBrush" Color="#FF999999" />
+    <SolidColorBrush x:Key="GlyphBackgroundMouseOverBrush" Color="#FF1B1B1C" />
+
+    <SolidColorBrush x:Key="LightColorBrush" Color="#DDD" />
+
+
+    <!--Background-->
+    <SolidColorBrush x:Key="Background" Color="#1C1C1C"/>
+    <SolidColorBrush x:Key="LightBackground" Color="#2D2D30"/>
+
+    <!--Foreground-->
+    <SolidColorBrush x:Key="Foreground" Color="#FFFFFF"/>
+
+    <!--General-->
+    <SolidColorBrush x:Key="BackgroundHighlighted" Color="#54545C"/>
+    <SolidColorBrush x:Key="BorderBrushHighlighted" Color="#6A6A75"/>
+    <SolidColorBrush x:Key="BackgroundSelected" Color="#007ACC"/>
+    <SolidColorBrush x:Key="BorderBrushSelected" Color="#1C97EA"/>
+    <SolidColorBrush x:Key="BackgroundNormal" Color="#FFE1E1EE"/>
+    <SolidColorBrush x:Key="BorderBrushNormal" Color="#FFC6C6D8"/>
+
+    <!--Menu-->
+    <SolidColorBrush x:Key="MenuSeparatorBorderBrush" Color="#FF404040"/>
+    <SolidColorBrush x:Key="MenuItemHighlightedBackground" Color="#3E3E40"/>
+    <SolidColorBrush x:Key="SubmenuItemBackground" Color="#FF191919"/>
+    <SolidColorBrush x:Key="SubmenuItemBackgroundHighlighted" Color="#333334"/>
+    <SolidColorBrush x:Key="MenuDisabledForeground" Color="#656565"/>
+
+    <!--Control colors.-->
+    <Color x:Key="WindowColor">#FFE8EDF9</Color>
+    <Color x:Key="ContentAreaColorLight">#FFC5CBF9</Color>
+    <Color x:Key="ContentAreaColorDark">#FF7381F9</Color>
+
+    <Color x:Key="DisabledControlLightColor">#FFE8EDF9</Color>
+    <Color x:Key="DisabledControlDarkColor">#FFC5CBF9</Color>
+    <Color x:Key="DisabledForegroundColor">#FF888888</Color>
+
+    <Color x:Key="SelectedBackgroundColor">DeepSkyBlue</Color>
+    <Color x:Key="SelectedUnfocusedColor">#FFDDDDDD</Color>
+
+    <Color x:Key="ControlLightColor">#FF333337</Color>
+    <Color x:Key="ControlMediumColor">#FF7381F9</Color>
+    <Color x:Key="ControlDarkColor">#FF211AA9</Color>
+
+    <Color x:Key="ControlMouseOverColor">LightSkyBlue</Color>
+    <Color x:Key="ControlPressedColor">#FF211AA9</Color>
+
+
+    <Color x:Key="GlyphColor">#FF444444</Color>
+    <Color x:Key="GlyphMouseOver">White</Color>
+
+    <!--Border colors-->
+    <Color x:Key="BorderLightColor">#FFCCCCCC</Color>
+    <Color x:Key="BorderMediumColor">#FF888888</Color>
+    <Color x:Key="BorderDarkColor">#FF444444</Color>
+
+    <Color x:Key="PressedBorderLightColor">#FF888888</Color>
+    <Color x:Key="PressedBorderDarkColor">#FF444444</Color>
+
+    <Color x:Key="DisabledBorderLightColor">#FFAAAAAA</Color>
+    <Color x:Key="DisabledBorderDarkColor">#FF888888</Color>
+
+    <Color x:Key="DefaultBorderBrushDarkColor">Black</Color>
+
+    <!--Control-specific resources.-->
+
+    <SolidColorBrush x:Key="testBrush" Color="#FF92BEF1" />
+    <Color x:Key="HeaderTopColor">#FF92BEF1</Color>
+    <Color x:Key="DatagridCurrentCellBorderColor">Black</Color>
+    <Color x:Key="SliderTrackDarkColor">#FFC5CBF9</Color>
+
+    <Color x:Key="NavButtonFrameColor">#FF3843C4</Color>
+
+    <Color x:Key="TextBoxBackgroundColor">White</Color>
+
+    <SolidColorBrush x:Key="PersonPathBrush" Color="#c6c6c6" />
+
+
+    <!--Icons-->
+
+    <StackPanel x:Key="RunCanvas" Orientation="Horizontal" x:Shared ="false">
+        <Canvas Width="20" Height="12" Margin="0,0,0,0" VerticalAlignment="Center" >
+            <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+                  Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+                  Stretch="Uniform" VerticalAlignment="Center" Margin="0,0,0,0"
+                  Data="F1 M 19,14L 31.9999,23.7501L 31.9999,24.5001L 19,34L 19,14 Z">
+                <Path.Style>
+                    <Style TargetType="Path">
+                        <Setter Property="Fill" Value="Green"/>
+                        <Style.Triggers>
+                            <Trigger Property="Button.IsEnabled" Value="False">
+                                <Setter Property="Fill" Value="LightGray" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Path.Style>
+            </Path>
+        </Canvas>
+        <TextBlock VerticalAlignment="Center">Выполнить</TextBlock>
+    </StackPanel>
+
+    <Canvas x:Key="StopCanvas" Width="9" Height="9"  Margin="0,0,0,0" x:Shared ="false">
+        <Rectangle Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+                   Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+                   VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Rectangle.Style>
+                <Style  TargetType="Rectangle">
+                    <Setter Property="Fill" Value="DarkRed"/>
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Rectangle.Style>
+        </Rectangle>
+    </Canvas>
+
+    <Canvas x:Key="CardConverterCanvas" Width="25" Height="15" x:Shared ="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+              Canvas.Left="0" Canvas.Top="0" Stretch="Fill" 
+              StrokeThickness="1"
+              Data="M 0.14648438 0.14648438 L 0.14648438 0.64648438 L 0.14648438 15.853516 L 25.853516 15.853516 L 25.853516 0.14648438 L 0.14648438 0.14648438 z M 1.1464844 1.1464844 L 24.853516 1.1464844 L 24.853516 14.853516 L 1.1464844 14.853516 L 1.1464844 1.1464844 z M 7.0605469 4.6738281 C 6.9140423 4.9551486 6.6647345 5.2438807 6.3125 5.5429688 C 5.9602655 5.8420568 5.54881 6.0983437 5.078125 6.3085938 L 5.078125 7.0800781 C 5.339963 6.9882788 5.6355931 6.8515673 5.9628906 6.6679688 C 6.2933053 6.4843702 6.559106 6.3007861 6.7617188 6.1171875 L 6.7617188 11.210938 L 7.6035156 11.210938 L 7.6035156 4.6738281 L 7.0605469 4.6738281 z M 12.707031 4.6738281 C 12.055553 4.6738281 11.536913 4.8334718 11.150391 5.15625 C 10.763868 5.4760669 10.541647 5.9436582 10.482422 6.5566406 L 11.347656 6.640625 C 11.350773 6.2319701 11.473662 5.9126195 11.716797 5.6816406 C 11.959932 5.4506617 12.284228 5.3339844 12.689453 5.3339844 C 13.072859 5.3339844 13.38224 5.4449287 13.619141 5.6640625 C 13.859159 5.880235 13.980469 6.146035 13.980469 6.4628906 C 13.980469 6.7649399 13.847776 7.0871886 13.585938 7.4277344 C 13.324099 7.7653189 12.821163 8.224279 12.076172 8.8046875 C 11.596135 9.1778072 11.22826 9.5067339 10.972656 9.7910156 C 10.72017 10.075297 10.537208 10.363084 10.421875 10.65625 C 10.350181 10.833926 10.316031 11.018455 10.322266 11.210938 L 14.853516 11.210938 L 14.853516 10.443359 L 11.492188 10.443359 C 11.585701 10.298257 11.704269 10.15386 11.847656 10.011719 C 11.991044 9.8666166 12.315339 9.5941387 12.820312 9.1914062 C 13.425034 8.7057583 13.856513 8.323281 14.115234 8.0449219 C 14.377072 7.7665627 14.563565 7.5017078 14.675781 7.25 C 14.787998 6.9982922 14.84375 6.7410603 14.84375 6.4804688 C 14.84375 5.9681694 14.652937 5.5398277 14.269531 5.1933594 C 13.886126 4.8468911 13.364743 4.6738281 12.707031 4.6738281 z M 18.578125 4.6738281 C 18.035746 4.6738281 17.583453 4.8210607 17.21875 5.1171875 C 16.854047 5.410353 16.620443 5.8253387 16.517578 6.3613281 L 17.359375 6.5039062 C 17.421717 6.1130189 17.561099 5.8184905 17.779297 5.6230469 C 17.997495 5.4276032 18.270359 5.3300781 18.597656 5.3300781 C 18.928071 5.3300781 19.197403 5.4266582 19.40625 5.6191406 C 19.615097 5.811623 19.720703 6.0544907 19.720703 6.3476562 C 19.720703 6.7178147 19.575837 6.9922458 19.289062 7.1699219 C 19.002288 7.3475979 18.680734 7.4355469 18.322266 7.4355469 C 18.287977 7.4355469 18.241655 7.4336569 18.185547 7.4277344 L 18.091797 8.1289062 C 18.328698 8.0696809 18.526574 8.0390625 18.685547 8.0390625 C 19.075187 8.0390625 19.397904 8.1605279 19.650391 8.4003906 C 19.902877 8.637292 20.029297 8.9394434 20.029297 9.3066406 C 20.029297 9.6916054 19.891494 10.012846 19.617188 10.273438 C 19.345998 10.534029 19.013062 10.666016 18.617188 10.666016 C 18.283656 10.666016 17.999409 10.565592 17.765625 10.367188 C 17.534958 10.165821 17.372021 9.8397927 17.275391 9.3867188 L 16.433594 9.4921875 C 16.489702 10.034099 16.715454 10.47586 17.111328 10.816406 C 17.510319 11.156952 18.009724 11.326172 18.611328 11.326172 C 19.278392 11.326172 19.831181 11.130177 20.267578 10.736328 C 20.703975 10.339518 20.921875 9.8576259 20.921875 9.2890625 C 20.921875 8.8685625 20.808417 8.5185935 20.583984 8.2402344 C 20.359552 7.9589139 20.045851 7.7743849 19.640625 7.6855469 C 19.952337 7.5493286 20.18673 7.3657445 20.345703 7.1347656 C 20.504676 6.9037867 20.583984 6.6465548 20.583984 6.3652344 C 20.583984 6.0691076 20.500356 5.7889435 20.332031 5.5253906 C 20.166824 5.2618378 19.926157 5.0553215 19.611328 4.9042969 C 19.296499 4.750311 18.952179 4.6738281 18.578125 4.6738281 z ">
+            <!--<Data="M 1.9042969 0 C 0.84905893 -2.9605947e-16 0 0.84905893 0 1.9042969 L 0 14.095703 C -2.9605947e-16 15.150941 0.84905893 16 1.9042969 16 L 24.095703 16 C 25.150941 16 26 15.150941 26 14.095703 L 26 1.9042969 C 26 0.84905893 25.150941 0 24.095703 0 L 1.9042969 0 z M 4.9140625 4.1015625 L 6.1015625 4.1015625 L 6.1015625 11.767578 L 4.6386719 11.767578 L 4.6386719 6.2519531 C 4.1039496 6.7519531 3.4737413 7.1217448 2.7480469 7.3613281 L 2.7480469 6.0332031 C 3.1299913 5.9082031 3.5442708 5.6733941 3.9921875 5.3261719 C 4.4401042 4.9754774 4.7473958 4.5668403 4.9140625 4.1015625 z M 12.814453 4.1015625 C 13.567925 4.1015625 14.161241 4.3046875 14.591797 4.7109375 C 15.022352 5.1171875 15.236328 5.6223958 15.236328 6.2265625 C 15.236328 6.5703125 15.173828 6.8984375 15.048828 7.2109375 C 14.9273 7.5199653 14.734158 7.8452691 14.466797 8.1855469 C 14.289714 8.4112413 13.969618 8.734592 13.507812 9.1582031 C 13.046007 9.5818142 12.751953 9.8630642 12.626953 10.001953 C 12.505425 10.140842 12.406467 10.276259 12.330078 10.408203 L 15.236328 10.408203 L 15.236328 11.767578 L 10.107422 11.767578 C 10.162977 11.253689 10.329644 10.76888 10.607422 10.310547 C 10.8852 9.8487413 11.432509 9.2369792 12.251953 8.4765625 C 12.911675 7.8619791 13.317491 7.4453125 13.466797 7.2265625 C 13.668186 6.9244792 13.767578 6.625217 13.767578 6.3300781 C 13.767578 6.0036892 13.679036 5.7536892 13.501953 5.5800781 C 13.328342 5.4029948 13.088325 5.3144531 12.779297 5.3144531 C 12.473741 5.3144531 12.229384 5.4077691 12.048828 5.5917969 C 11.868273 5.7758247 11.764106 6.0807292 11.736328 6.5078125 L 10.279297 6.3613281 C 10.366102 5.5557725 10.63737 4.9776476 11.095703 4.6269531 C 11.554036 4.2762587 12.126953 4.1015625 12.814453 4.1015625 z M 20.642578 4.1015625 C 21.361328 4.1015625 21.939019 4.3307292 22.373047 4.7890625 C 22.730686 5.1640625 22.908203 5.5883246 22.908203 6.0605469 C 22.908203 6.7306858 22.543186 7.2647569 21.810547 7.6640625 C 22.248047 7.7578125 22.597005 7.968533 22.857422 8.2949219 C 23.121311 8.6213108 23.251953 9.0147569 23.251953 9.4765625 C 23.251953 10.146701 23.007161 10.717231 22.517578 11.189453 C 22.027995 11.661675 21.41862 11.898438 20.689453 11.898438 C 19.998481 11.898438 19.425564 11.700521 18.970703 11.304688 C 18.515842 10.905382 18.252604 10.384549 18.179688 9.7421875 L 19.595703 9.5703125 C 19.640842 9.9314236 19.763021 10.207465 19.960938 10.398438 C 20.158854 10.58941 20.398437 10.685547 20.679688 10.685547 C 20.981771 10.685547 21.234592 10.570964 21.439453 10.341797 C 21.647786 10.11263 21.751953 9.8029514 21.751953 9.4140625 C 21.751953 9.0460069 21.652995 8.7543403 21.455078 8.5390625 C 21.257161 8.3237847 21.017144 8.2167969 20.732422 8.2167969 C 20.544922 8.2167969 20.320964 8.2532552 20.060547 8.3261719 L 20.220703 7.1328125 C 20.616536 7.1432292 20.91862 7.0575087 21.126953 6.8769531 C 21.335286 6.6929253 21.439453 6.4505208 21.439453 6.1484375 C 21.439453 5.891493 21.363715 5.6859809 21.210938 5.5332031 C 21.05816 5.3804253 20.855035 5.3046875 20.601562 5.3046875 C 20.351562 5.3046875 20.138021 5.390842 19.960938 5.5644531 C 19.783854 5.7380642 19.676866 5.9928385 19.638672 6.3261719 L 18.289062 6.0957031 C 18.382813 5.6338976 18.523437 5.2664931 18.710938 4.9921875 C 18.90191 4.7144097 19.165148 4.4980469 19.501953 4.3417969 C 19.842231 4.1820746 20.222439 4.1015625 20.642578 4.1015625 z ">-->
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="DarkSlateGray" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Canvas x:Key="MsExcelCanvas" Width="16" Height="16" x:Shared ="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+              Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="F1 M 42,24L 57,24L 57,52L 42,52L 42,50L 47,50L 47,46L 42,46L 42,45L 47,45L 47,41L 42,41L 42,40L 47,40L 47,36L 42,36L 42,35L 47,35L 47,31L 42,31L 42,30L 47,30L 47,26L 42,26L 42,24 Z M 54.9995,50.0005L 54.9997,46.0003L 47.9995,46.0003L 47.9995,50.0005L 54.9995,50.0005 Z M 54.9996,41.0004L 47.9995,41.0004L 47.9995,45.0003L 54.9997,45.0003L 54.9996,41.0004 Z M 54.9996,36.0004L 47.9995,36.0004L 47.9995,40.0004L 54.9996,40.0004L 54.9996,36.0004 Z M 54.9996,31.0004L 47.9995,31.0004L 47.9995,35.0004L 54.9996,35.0004L 54.9996,31.0004 Z M 54.9995,26.0005L 47.9995,26.0005L 47.9995,30.0004L 54.9996,30.0004L 54.9995,26.0005 Z M 18.9997,23.7503L 40.9994,19.7506L 40.9994,56.2506L 18.9997,52.2503L 18.9997,23.7503 Z M 34.6404,44.5147L 31.3367,37.4084L 34.5522,30.4699L 31.9399,30.5805L 30.2234,34.6963L 30.0162,35.3903L 29.8872,35.8892L 29.8596,35.8895C 29.4574,34.1248 28.7481,32.4436 28.1318,30.7417L 25.2803,30.8624L 28.2549,37.4637L 24.997,44.0621L 27.7904,44.1932L 29.5296,39.8757L 29.7578,38.9297L 29.7876,38.93C 30.2317,40.8236 31.1236,42.5844 31.861,44.3843L 34.6404,44.5147 Z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="Green" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Canvas  x:Key="PersonCanvas" Width="16" Height="16" x:Shared="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+              Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="F1 M 38,19C 43.5417,19 45.9167,22.1667 45.1174,28.8134C 45.8315,29.2229 46.3125,29.9928 46.3125,30.875C 46.3125,31.9545 45.5923,32.8658 44.6061,33.1546C 44.1941,34.623 43.5543,35.9229 42.75,36.9628L 42.75,41.9583C 45.3889,42.4861 47.5,42.75 50.6667,44.3333C 53.8333,45.9167 54.8889,47.3681 57,49.4792L 57,57L 19,57L 19,49.4792C 21.1111,47.3681 22.1667,45.9167 25.3333,44.3333C 28.5,42.75 30.6111,42.4861 33.25,41.9583L 33.25,36.9628C 32.4457,35.9229 31.8059,34.623 31.3939,33.1546C 30.4077,32.8658 29.6875,31.9545 29.6875,30.875C 29.6875,29.9928 30.1685,29.2229 30.8826,28.8134C 30.0833,22.1667 32.4583,19 38,19 Z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="LightSkyBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Canvas  x:Key="PersonInfoCanvas" Width="16" Height="14" x:Shared="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+              Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="M 38 19 C 32.4583 19 30.083513 22.1658 30.882812 28.8125 C 30.168712 29.222 29.6875 29.9928 29.6875 30.875 C 29.6875 31.9545 30.408331 32.865497 31.394531 33.154297 C 31.806531 34.622697 32.4457 35.922991 33.25 36.962891 L 33.25 41.958984 C 30.6111 42.486784 28.500684 42.750684 25.333984 44.333984 C 22.167384 45.917384 21.1111 47.367416 19 49.478516 L 19 57 L 44.34375 57 A 12.185963 12.185963 0 0 1 39.984375 47.660156 A 12.185963 12.185963 0 0 1 42.75 39.941406 L 42.75 36.962891 C 43.5543 35.922991 44.193469 34.622697 44.605469 33.154297 C 45.591669 32.865497 46.3125 31.9545 46.3125 30.875 C 46.3125 29.9928 45.831287 29.222 45.117188 28.8125 C 45.916486 22.1658 43.5417 19 38 19 z M 52.169922 37.767578 A 9.8940804 9.8940804 0 0 0 42.275391 47.660156 A 9.8940804 9.8940804 0 0 0 52.169922 57.554688 A 9.8940804 9.8940804 0 0 0 62.064453 47.660156 A 9.8940804 9.8940804 0 0 0 52.169922 37.767578 z M 50.445312 41.267578 L 53.894531 41.267578 L 53.894531 44.251953 L 50.445312 44.251953 L 50.445312 41.267578 z M 50.445312 45.84375 L 53.894531 45.84375 L 53.894531 54.054688 L 50.445312 54.054688 L 50.445312 45.84375 z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="LightSkyBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Viewbox x:Key="InfoViewbox" x:Shared="false">
+        <Path  Stretch="Uniform" 
+               Data="M 38 19C 48.4934 19 57 27.5066 57 38C 57 48.4934 48.4934 57 38 57C 27.5066 57 19 48.4934 19 38C 19 27.5066 27.5066 19 38 19 Z M 33.25 33.25L 33.25 36.4167L 36.4166 36.4167L 36.4166 47.5L 33.25 47.5L 33.25 50.6667L 44.3333 50.6667L 44.3333 47.5L 41.1666 47.5L 41.1666 36.4167L 41.1666 33.25L 33.25 33.25 Z M 38.7917 25.3333C 37.48 25.3333 36.4167 26.3967 36.4167 27.7083C 36.4167 29.02 37.48 30.0833 38.7917 30.0833C 40.1033 30.0833 41.1667 29.02 41.1667 27.7083C 41.1667 26.3967 40.1033 25.3333 38.7917 25.3333 Z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="LightSkyBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Viewbox>
+
+    <Viewbox x:Key="ExportPhotoViewbox" x:Shared="false">
+        <Path  Stretch="Uniform" 
+               Data="M 17.033203 11.242188 L 17.033203 12.992188 L 17.033203 55.876953 L 44.898438 55.876953 L 44.898438 52.376953 L 20.533203 52.376953 L 20.533203 14.742188 L 55.466797 14.742188 L 55.466797 33.408203 L 58.966797 36.908203 L 58.966797 11.242188 L 17.033203 11.242188 z M 38 19 C 32.4583 19 30.083513 22.1658 30.882812 28.8125 C 30.168712 29.222 29.6875 29.9928 29.6875 30.875 C 29.6875 31.9545 30.408331 32.865497 31.394531 33.154297 C 31.806531 34.622697 32.4457 35.922991 33.25 36.962891 L 33.25 41.958984 C 30.6111 42.486784 28.500684 42.750684 25.333984 44.333984 C 24.861879 44.570052 24.447348 44.802333 24.058594 45.035156 L 24.058594 48.390625 L 35.292969 48.390625 L 42.75 40.933594 L 42.75 36.962891 C 43.5543 35.922991 44.193469 34.622697 44.605469 33.154297 C 45.591669 32.865497 46.3125 31.9545 46.3125 30.875 C 46.3125 29.9928 45.831287 29.222 45.117188 28.8125 C 45.916486 22.1658 43.5417 19 38 19 z M 52.871094 35.056641 L 38.888672 49.039062 L 47.898438 49.039062 L 47.898438 61.466797 L 57.841797 61.466797 L 57.841797 49.039062 L 66.853516 49.039062 L 52.871094 35.056641 z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="LightSteelBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Viewbox>
+
+    <Viewbox x:Key="FilterOnlyCheckedViewbox" x:Shared="false">
+        <Path  Stretch="Uniform"
+               StrokeThickness="0" 
+               StrokeLineJoin="Round" Data="m 0 0 4.9987403 7 v 6 L 6.9982364 12 V 7 L 11.996977 0 Z m 14.578357 5.5742188 -0.01172 0.015625 -3.692428 4.234375 L 8.9996852 8.0253906 8.0780424 8.9628906 10.981608 11.917969 15.5 6.4023438 Z">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="DimGray"/>
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Viewbox>
+
+    <Canvas  x:Key="DepartmentCanvas" Width="20" Height="16" x:Shared ="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Canvas.Left="2" Canvas.Top="0" Stretch="Fill" 
+              Data="m 30.344237 11.656065 c -5.910369 0 -8.443838 3.37725 -7.591474 10.466084 -0.761497 0.436804 -1.274826 1.258773 -1.274826 2.199702 0 1.151332 0.767991 2.124117 1.819753 2.432171 0.439364 1.566125 1.121865 2.950481 1.979732 4.059451 v 5.329278 c -2.814467 0.562868 -5.06402 0.843426 -8.441358 2.532158 -3.377207 1.688603 -4.505114 3.237657 -6.756585 5.489256 v 8.021415 h 12.725777 c 1.62922 -1.687579 1.362188 -1.472236 4.161937 -2.872111 3.377335 -1.688731 4.614528 -1.96929 7.428995 -2.532157 V 40.9471 c -0.857868 -1.108969 -1.540368 -2.495825 -1.979732 -4.06195 -1.051761 -0.307926 -1.312323 -1.78577 -1.312323 -2.937103 0 -0.9408 0.513331 -1.762897 1.274828 -2.199701 -0.0081 -5.906786 2.019115 -7.932083 5.676732 -9.381231 0.405449 -6.218167 -2.167887 -10.71105 -7.711456 -10.71105 z M 42.502591 23.81442 c -5.910368 0 -8.443838 3.377122 -7.591473 10.466083 -0.761625 0.436805 -1.274827 1.258773 -1.274827 2.199702 0 1.151333 0.767993 2.124246 1.819754 2.432172 0.439365 1.566124 1.121864 2.950481 1.979732 4.05945 v 5.329279 c -2.814467 0.562868 -5.064021 0.843426 -8.441359 2.532158 -3.377333 1.688603 -4.504985 3.237657 -6.756584 5.489256 v 8.021415 H 62.767348 V 56.32252 c -2.251471 -2.251599 -3.37925 -3.800653 -6.756584 -5.489256 -3.37721 -1.688732 -5.626892 -1.96929 -8.441359 -2.532158 v -5.329279 c 0.857868 -1.108969 1.540367 -2.493454 1.979732 -4.05945 1.051762 -0.308054 1.819754 -1.280839 1.819754 -2.432172 0 -0.940929 -0.51333 -1.762897 -1.274827 -2.199702 C 50.946429 27.191542 48.412831 23.81442 42.502591 23.81442 Z m 30.863324 25.65403 c -1.34e-4 0.04917 1.32e-4 0.09022 0 0.14498 0.0053 -0.04168 0.01088 -0.08535 0.01749 -0.124987 -0.004 -0.0052 -0.01369 -0.01486 -0.01749 -0.02 z">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="YellowGreen" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+
+    <Canvas x:Key="AccessPointCanvas" Width="12" Height="16" x:Shared ="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Stretch="Fill" Data="M 3 0 L 3 20 L 17 20 L 17 0 L 3 0 z M 10 4.3828125 A 2.7739503 2.7739503 0 0 1 12.773438 7.15625 A 2.7739503 2.7739503 0 0 1 12.746094 7.5234375 C 12.743594 7.5417665 12.741081 7.559888 12.738281 7.578125 A 2.7739503 2.7739503 0 0 1 12.664062 7.921875 A 2.7739503 2.7739503 0 0 1 12.660156 7.9335938 A 2.7739503 2.7739503 0 0 1 12.53125 8.2851562 A 2.7739503 2.7739503 0 0 1 12.515625 8.3164062 A 2.7739503 2.7739503 0 0 1 12.365234 8.5976562 C 12.352884 8.6178982 12.340995 8.6382841 12.328125 8.6582031 A 2.7739503 2.7739503 0 0 1 11.847656 9.2207031 A 2.7739503 2.7739503 0 0 1 11.539062 9.4609375 A 2.7739503 2.7739503 0 0 1 11.195312 9.65625 L 11.568359 15.617188 L 10 15.617188 L 8.4316406 15.617188 L 8.8046875 9.6542969 A 2.7739503 2.7739503 0 0 1 8.1523438 9.2207031 A 2.7739503 2.7739503 0 0 1 7.8828125 8.9433594 A 2.7739503 2.7739503 0 0 1 7.4785156 8.3066406 C 7.4746366 8.2981836 7.4705869 8.2877969 7.4667969 8.2792969 A 2.7739503 2.7739503 0 0 1 7.3457031 7.953125 C 7.3423631 7.942078 7.3391475 7.9310189 7.3359375 7.9199219 A 2.7739503 2.7739503 0 0 1 7.2578125 7.5546875 C 7.2569525 7.5488225 7.2566884 7.5449425 7.2558594 7.5390625 A 2.7739503 2.7739503 0 0 1 7.2265625 7.15625 A 2.7739503 2.7739503 0 0 1 10 4.3828125 z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="LightSteelBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Viewbox x:Key="AccessPointViewbox" x:Shared="false">
+        <Path  Stretch="Uniform" 
+               Data="M 3 0 L 3 20 L 17 20 L 17 0 L 3 0 z M 10 4.3828125 A 2.7739503 2.7739503 0 0 1 12.773438 7.15625 A 2.7739503 2.7739503 0 0 1 12.746094 7.5234375 C 12.743594 7.5417665 12.741081 7.559888 12.738281 7.578125 A 2.7739503 2.7739503 0 0 1 12.664062 7.921875 A 2.7739503 2.7739503 0 0 1 12.660156 7.9335938 A 2.7739503 2.7739503 0 0 1 12.53125 8.2851562 A 2.7739503 2.7739503 0 0 1 12.515625 8.3164062 A 2.7739503 2.7739503 0 0 1 12.365234 8.5976562 C 12.352884 8.6178982 12.340995 8.6382841 12.328125 8.6582031 A 2.7739503 2.7739503 0 0 1 11.847656 9.2207031 A 2.7739503 2.7739503 0 0 1 11.539062 9.4609375 A 2.7739503 2.7739503 0 0 1 11.195312 9.65625 L 11.568359 15.617188 L 10 15.617188 L 8.4316406 15.617188 L 8.8046875 9.6542969 A 2.7739503 2.7739503 0 0 1 8.1523438 9.2207031 A 2.7739503 2.7739503 0 0 1 7.8828125 8.9433594 A 2.7739503 2.7739503 0 0 1 7.4785156 8.3066406 C 7.4746366 8.2981836 7.4705869 8.2877969 7.4667969 8.2792969 A 2.7739503 2.7739503 0 0 1 7.3457031 7.953125 C 7.3423631 7.942078 7.3391475 7.9310189 7.3359375 7.9199219 A 2.7739503 2.7739503 0 0 1 7.2578125 7.5546875 C 7.2569525 7.5488225 7.2566884 7.5449425 7.2558594 7.5390625 A 2.7739503 2.7739503 0 0 1 7.2265625 7.15625 A 2.7739503 2.7739503 0 0 1 10 4.3828125 z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="LightSteelBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Viewbox>
+
+
+    <Canvas x:Key="EventCanvas" Width="9" Height="12" x:Shared ="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Canvas.Left="0" Canvas.Top="0" Stretch="Fill"
+              StrokeThickness="1"                                          
+              Data="F1 M 52.252,18.9974L 38,34.8333L 50.6667,34.8333L 25.3316,60.1667L 34.8333,39.5833L 23.75,39.5833L 36.4164,18.9974L 52.252,18.9974 Z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="Orange" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Canvas x:Key="LevelCanvas"  Width="15" Height="16" x:Shared ="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+              Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="m 56.33715 29.42045 c 0 6.1212 -4.9622 11.0834 -11.0834 11.0834 -1.2454 0 -2.4429 -0.2055 -3.5604 -0.5843 l -0.4728 0.6274 -2.6959 1.5402 1.1018 3.2062 -5.7763 -0.8866 0.7003 4.9918 -5.6223 -0.1685 2.8673 5.5237 -1.5366 1.5244 -8.0778 1.6423 -0.9349 -6.6521 13.5952 -18.0415 c -0.434 -1.187 -0.6709 -2.469 -0.6709 -3.8064 0 -6.1211 4.9622 -11.0833 11.0833 -11.0833 6.1212 0 11.0834 4.9622 11.0834 11.0833 z m -5.5417 -3.1666 c 0 -1.3117 -1.0633 -2.375 -2.375 -2.375 -1.3117 0 -2.375 1.0633 -2.375 2.375 0 1.3116 1.0633 2.375 2.375 2.375 1.3117 0 2.375 -1.0634 2.375 -2.375 z">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="Orange" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Canvas x:Key="FindCanvas"  Width="16" Height="16" x:Shared ="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+              Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="m 34.353575 22 c -6.9036 0 -12.5 5.5964 -12.5 12.5 0 6.9036 5.5964 12.5 12.5 12.5 2.3644 0 4.5755 -0.6565 6.5 -1.7574 l 9.0251 9.0252 c 1.1716 1.1715 3.0711 1.1715 4.2427 0 1.1715 -1.1716 1.1715 -3.0711 0 -4.2427 l -9.0649 -9.0641 c 1.1406 -1.8855 1.7971 -4.0966 1.7971 -6.461 0 -6.9036 -5.5964 -12.5 -12.5 -12.5 z m 0 4 c 4.6944 0 8.5 3.8056 8.5 8.5 0 4.6944 -3.8056 8.5 -8.5 8.5 -4.6944 0 -8.5 -3.8056 -8.5 -8.5 0 -4.6944 3.8056 -8.5 8.5 -8.5 z">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="DarkGray" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Canvas x:Key="EditCanvas"  Width="16" Height="16" x:Shared ="false">
+        <Path Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" 
+              Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"
+              Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="M 53.2929 21.2929L 54.7071 22.7071C 56.4645 24.4645 56.4645 27.3137 54.7071 29.0711L 52.2323 31.5459L 44.4541 23.7677L 46.9289 21.2929C 48.6863 19.5355 51.5355 19.5355 53.2929 21.2929 Z M 31.7262 52.052L 23.948 44.2738L 43.0399 25.182L 50.818 32.9601L 31.7262 52.052 Z M 23.2409 47.1023L 28.8977 52.7591L 21.0463 54.9537L 23.2409 47.1023 Z ">
+            <Path.Style>
+                <Style TargetType="{x:Type Path}">
+                    <Setter Property="Fill" Value="Orange" />
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsEnabled" Value="False">
+                            <Setter Property="Fill" Value="LightGray" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Path.Style>
+        </Path>
+    </Canvas>
+
+    <Path x:Key="DataBasePath" x:Shared ="false"
+          Stretch="UniformToFill" 
+          Fill="{Binding Foreground, RelativeSource={RelativeSource AncestorType={x:Type ContentControl}}}"
+          Data="M 38 19C 47.3888 19 55 21.0147 55 23.5038L 55 25.5C 55 27.9853 47.3888 30 38 30C 28.6112 30 21 27.9853 21 25.5L 21 23.5C 21 21.0147 28.6112 19 38 19 Z M 55 52.5C 55 54.9853 47.3888 57 38 57C 28.6112 57 21 54.9853 21 52.5L 21 46.5C 21 48.9853 28.6112 51 38 51C 47.384 51 54.9921 48.9874 55 46.5039L 55 52.5 Z M 55 43.5C 55 45.9853 47.3888 48 38 48C 28.6112 48 21 45.9853 21 43.5L 21 37.5C 21 39.9853 28.6112 42 38 42C 47.384 42 54.9921 39.9874 55 37.5038L 55 43.5 Z M 55 34.5C 55 36.9853 47.3888 39 38 39C 28.6112 39 21 36.9853 21 34.5L 21 28.5C 21 30.9853 28.6112 33 38 33C 47.384 33 54.9921 30.9874 55 28.5038L 55 34.5 Z ">
+    </Path>
+
+    <Path x:Key="DiskPath" x:Shared ="false"
+          Stretch="Uniform" 
+          Fill="DimGray"
+          Data="M 20 20L 50.25 20L 56 25.75L 56 56L 20 56L 20 20 Z M 52 27.25L 48.75 24L 48 24L 48 37L 28 37L 28 24L 24 24L 24 52L 52 52L 52 27.25 Z M 39 24L 39 34L 44 34L 44 24L 39 24 Z ">
+    </Path>
+
+    <Path x:Key="PersonPath" x:Shared ="false"
+          Stretch="UniformToFill"
+          Fill="{Binding Foreground, RelativeSource={RelativeSource AncestorType={x:Type ContentControl}}}"
+          Data="M 38 19 C 32.4583 19 30.083513 22.1658 30.882812 28.8125 C 30.168712 29.222 29.6875 29.9928 29.6875 30.875 C 29.6875 31.9545 30.408331 32.865497 31.394531 33.154297 C 31.806531 34.622697 32.4457 35.922991 33.25 36.962891 L 33.25 41.958984 C 30.6111 42.486784 28.500684 42.750684 25.333984 44.333984 C 24.974878 44.513549 24.649271 44.689864 24.339844 44.867188 L 24.339844 50.660156 L 51.660156 50.660156 L 51.660156 44.867188 C 51.350729 44.689864 51.025122 44.513549 50.666016 44.333984 C 47.499316 42.750684 45.3889 42.486784 42.75 41.958984 L 42.75 36.962891 C 43.5543 35.922991 44.193469 34.622697 44.605469 33.154297 C 45.591669 32.865497 46.3125 31.9545 46.3125 30.875 C 46.3125 29.9928 45.831287 29.222 45.117188 28.8125 C 45.916487 22.1658 43.5417 19 38 19 z ">
+        <!--<Path.Clip>
+            <RectangleGeometry>
+                <RectangleGeometry.Rect>
+                    <Rect Width="20" Height="30" X="10"/>
+                </RectangleGeometry.Rect>
+            </RectangleGeometry> 
+        </Path.Clip>-->
+    </Path>
+
+</ResourceDictionary>

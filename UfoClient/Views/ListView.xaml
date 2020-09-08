@@ -1,0 +1,227 @@
+﻿<Window x:Class="UFO.ListView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UFO"
+        xmlns:molser="clr-namespace:MolserLib.Controls;assembly=MolserLib"
+        mc:Ignorable="d"
+        xmlns:conv="clr-namespace:MolserLib.Converters;assembly=MolserLib"
+        Title="{Binding Title}" 
+        MaxHeight="1920"
+        MaxWidth="1080"
+        Height="640"
+        Width="550"
+        SizeToContent="Manual"
+        Style="{StaticResource VS2012WindowStyle4}"
+        Foreground="{DynamicResource TextBoxFont}">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToUIVisibilityConverter" />
+        <conv:BoolToUIVisibilityInverseConverter x:Key="boolToUIVisibilityInverseConverter"/>
+        <conv:NullToVisibilityConverter x:Key="nullToVisibilityConverter"/>
+        <conv:BoolToBoolInverseConverter x:Key="inverseBooleanConverter" />
+        <conv:BoolToUIVisibilityMultiConverter x:Key="boolToUIVisibilityMultiConverter" />
+        <conv:NullToBoolConverter x:Key="nullToBoolConverter"/>
+        <conv:BoolToHeadersVisibilityConverter x:Key="boolToHeadersVisibilityConverter"/>
+
+    </Window.Resources>
+    <!--<Window.CommandBindings>
+        <CommandBinding Command="commands:CustomCommands.Find" CanExecute="FindCommand_CanExecute" Executed="FindCommand_Executed" />
+        <CommandBinding Command="commands:CustomCommands.FindCancel" Executed="FindCancelCommand_Executed" />
+    </Window.CommandBindings>-->
+    <!--<Grid Margin="15,0,15,10" DockPanel.Dock="Top">-->
+    <Grid Margin="0" DockPanel.Dock="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"  />
+            <RowDefinition/>
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ToolBar Grid.Row="0">
+            <ToggleButton x:Name="showOnlyCheckedButton"                           
+                          Width="32" Margin="0,0,10,0"
+                          Checked="showOnlyCheckedButton_Checked"
+                          Unchecked="showOnlyCheckedButton_Unchecked"
+                          IsChecked="{Binding IsOnlyCheckedShowed}"
+                          Visibility="{Binding IsSelectableMode, Converter={StaticResource boolToUIVisibilityConverter}}">
+                <Border BorderThickness="0" Background="Transparent" Padding="2">
+                    <ContentControl Content="{StaticResource FilterOnlyCheckedViewbox}"/>
+                </Border>
+                <ToggleButton.Style>
+                    <Style TargetType="ToggleButton" BasedOn="{StaticResource ToolBarButtonBaseStyle}">
+                        <Setter Property="ToolTip" Value="Показать только выделенные"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="ToolTip" Value="Показаны только выделенные"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ToggleButton.Style>
+            </ToggleButton>
+            <Grid >
+                <molser:MsTextBox x:Name="findTextBox" 
+                                Padding="0,0,20,0"   
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Width="160"                            
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Center"
+                                ToolTip="Найти"
+                                TextWrapping="Wrap"
+                                MouseDoubleClick="selectAllTextBox"
+                                GotKeyboardFocus="selectAllTextBox"
+                                PreviewMouseLeftButtonDown="selectivelyIgnoreMouseButton"
+                                TextChanged="findTextBox_TextChanged"
+                                Text="{Binding FilterFindValue, UpdateSourceTrigger=PropertyChanged}"
+                                Watermark="Найти..."
+                                >
+                </molser:MsTextBox>
+            </Grid>
+
+            <StackPanel Margin="10,0,0,0" Orientation="Horizontal"
+                        Visibility="{Binding IsFilterListEnable, Mode=OneWay, Converter={StaticResource boolToUIVisibilityConverter}}">
+                <TextBlock Text="Отдел:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <ComboBox x:Name="filterListComboBox"
+                        MinWidth="80"
+                        HorizontalAlignment="Stretch"
+                        ItemsSource="{Binding Departments}"
+                        SelectedIndex="0"
+                        SelectedItem="{Binding FilterListValue}"
+                        SelectionChanged="filterListComboBox_SelectionChanged"
+                        Margin="0,0,10,0"
+                        VerticalAlignment="Center">
+                </ComboBox>
+            </StackPanel>
+            <Button Width="32"
+                    Command="{Binding ExportToMSExcelCommand}"
+                    ToolTip="Экспортировать в MS Excel" ToolTipService.ShowOnDisabled="True"
+                    Visibility="{Binding IsExportEnable, Converter={StaticResource boolToUIVisibilityConverter}}"
+                    Content="{StaticResource MsExcelCanvas}">
+            </Button>
+        </ToolBar>
+        <Grid Grid.Row="1" Margin="10,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <FrameworkElement x:Name="dummyElement" Visibility="Collapsed"/>
+            <CheckBox x:Name="dummyCheckAllCheckBox" Visibility="Collapsed"/>
+            <DataGrid Grid.Row="0" x:Name="itemsDataGrig" Margin="0,0,0,0"
+                ItemsSource="{Binding Items}"                              
+                SelectedItem="{Binding SelectedItem}"
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Top"
+                AutoGenerateColumns="False"
+                Visibility="{Binding Items, Converter={StaticResource nullToVisibilityConverter}}" 
+                GridLinesVisibility="Horizontal"
+                HorizontalGridLinesBrush="{StaticResource DataGridLinesBrush}"
+                CanUserResizeRows="False"
+                CanUserAddRows="False"
+                HeadersVisibility="{Binding IsStatisticsHidden, Mode=OneWay, Converter={StaticResource boolToHeadersVisibilityConverter}}" 
+                SelectionMode="Single"
+                MaxWidth="1920"
+                MaxHeight="1080"  
+                EnableRowVirtualization="True"
+                EnableColumnVirtualization="True"
+                LoadingRow="dataGrid_LoadingRow"
+                IsTextSearchEnabled="True"
+                TextSearch.TextPath="Name"
+                IsReadOnly="True">
+                <!--EnableRowVirtualization="True"
+                TargetUpdated="DataGrid_TargetUpdated"
+                EnableColumnVirtualization="True"
+                VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"-->
+                <DataGrid.Resources>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="" IsReadOnly="False" CanUserSort="True" SortMemberPath="IsChecked"
+                                            Visibility="{Binding DataContext.IsSelectableMode,
+                                                                 Source={x:Reference dummyElement},
+                                                                 Converter={StaticResource boolToUIVisibilityConverter}}">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Grid Margin="0,0,0,0">
+                                    <CheckBox x:Name="checkAllCheckBox"
+                                           HorizontalAlignment="Left"
+                                            IsChecked="{Binding IsChecked, ElementName=dummyCheckAllCheckBox}"
+                                            Click="CheckAllCheckBox_Click">
+                                        <CheckBox.Style>
+                                            <Style TargetType="CheckBox" BasedOn="{StaticResource StandardCheckBox}">
+                                                <Setter Property="ToolTip" Value="Выбрать все"/>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsChecked" Value="True">
+                                                        <Setter Property="ToolTip" Value="Снять выделение со всех"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </CheckBox.Style>
+                                    </CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <CheckBox Grid.Row="0"  Margin="0,0,0,0"
+                                              HorizontalAlignment="Left" VerticalAlignment="Center"
+                                              IsChecked="{Binding Path=IsChecked, IsAsync=False, UpdateSourceTrigger=PropertyChanged}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Path=Name, IsAsync=False}" IsReadOnly="True"
+                                        Visibility="{Binding DataContext.ItemProperties[Name],
+                                                                 Source={x:Reference dummyElement},
+                                                                 Converter={StaticResource boolToUIVisibilityConverter}}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Path=Id, IsAsync=False}" IsReadOnly="True" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="2" Margin="0,5,0,0"              >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="10,0,0,0" 
+                        Orientation="Horizontal" 
+                        VerticalAlignment="Top">
+                <StackPanel.Visibility>
+                    <MultiBinding Mode="OneWay" Converter="{StaticResource boolToUIVisibilityMultiConverter}">
+                        <Binding Mode="OneWay" Path="IsSelectableMode" />
+                        <Binding Mode="OneWay" Path="IsStatisticsHidden" Converter="{StaticResource inverseBooleanConverter}"/>
+                    </MultiBinding>
+                </StackPanel.Visibility>
+                <TextBlock Text="Выбрано: "/>
+                <TextBlock Text="{Binding SelectedItemsCount}"/>
+            </StackPanel>
+            <StackPanel Margin="5,0,0,0" 
+                        Grid.Column="1" 
+                        Name="rowsCountStackPanel" 
+                        Orientation="Horizontal" 
+                        VerticalAlignment="Top"
+                        Visibility="{Binding IsStatisticsHidden,  Mode=OneWay, Converter={StaticResource boolToUIVisibilityInverseConverter}}">
+                <TextBlock Text="Показано: "/>
+                <TextBlock Name="rowsCountTextBox" Text="{Binding Path=Items.Count, ElementName=itemsDataGrig}"/>
+                <TextBlock Margin="5,0,0,0" Text="Всего: "/>
+                <TextBlock Text="{Binding Items.Count}"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Row="2"
+            Margin="0,5,15,10" 
+            Orientation="Horizontal" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top">
+            <Button Height="26" Width="60"  HorizontalAlignment="Left" Content="OK" Command="{Binding ConfirmCommand}" IsDefault="True"/>
+            <Button HorizontalAlignment="Left" IsCancel="True" Click="CloseWindow_Click" Content="Отмена" Margin="10,0,0,0" Height="26" Width="60"/>
+        </StackPanel>
+    </Grid>
+</Window>

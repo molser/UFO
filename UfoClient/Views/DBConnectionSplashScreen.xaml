@@ -1,0 +1,24 @@
+﻿<Window x:Class="UFO.DBConnectionSplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UFO"
+        xmlns:molser="clr-namespace:MolserControlLibrary;assembly="
+        mc:Ignorable="d"
+        Icon="/Icons/UFO.ico"
+        Style="{StaticResource VS2012WindowStyle4}" 
+        Title="УФО" Height="150" Width="340"
+        ResizeMode="NoResize">
+    <Grid>
+        <!--<ProgressBar HorizontalAlignment="Stretch" 
+                     VerticalAlignment="Stretch"
+                     IsIndeterminate="True">
+        </ProgressBar>-->
+        <StackPanel Orientation="Horizontal">
+            <molser:MolserWait HorizontalAlignment="Left" Margin="15,0,15,0" Height="80" Width="80"/>
+            <TextBlock Text="Подключение к базе данных..." Foreground="{DynamicResource TextColor}" VerticalAlignment="Center"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

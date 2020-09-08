@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UfoService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ScriptPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Projects\UFO\UFO\UfoService\Script\TestScript.vbs</Value>
+    </Setting>
+    <Setting Name="ResultFolderPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Projects\UFO\UFO\UfoService\WorkResult</Value>
+    </Setting>
+    <Setting Name="ServiceLogFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Projects\UFO\UFO\UfoService\WorkResult\UfoService.log</Value>
+    </Setting>
+    <Setting Name="ConcurrentJobsCount" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ScriptEngine" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">cscript</Value>
+    </Setting>
+    <Setting Name="ErrorCharSet" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">cp866</Value>
+    </Setting>
+    <Setting Name="GrantedUserRole" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">UfoPhotoSearch</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,17 @@
+﻿<Application x:Class="UFO.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+             <!--StartupUri="MainWindow.xaml"-->     
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/CustomizedWindow/SharedDark.xaml"/>
+                <ResourceDictionary Source="Styles/CustomizedWindow/VS2012WindowStyle.xaml"/>
+                <ResourceDictionary Source="Styles/CustomizedWindow/MolSerDictionary.xaml"/>
+                <ResourceDictionary Source="Styles/CustomizedWindow/XceedWpfToolkitDictionary.xaml"/>
+                <!--<ResourceDictionary Source="pack://application:,,,/MolserStyles40;component/VS2012/StandardControlsDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MolserStyles40;component/VS2012/MolSerDictionary.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

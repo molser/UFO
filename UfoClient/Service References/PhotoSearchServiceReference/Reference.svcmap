@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bc1d0411-a1ee-44b0-a258-aa88b533c14b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:8700/UfoService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="5a8f132e-8e49-4e7a-9fc6-00d90d6fa96f" SourceId="1" SourceUrl="net.tcp://localhost:8700/UfoService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="050c0ac1-03b6-4549-a7b4-26a4331bcb60" SourceId="1" SourceUrl="net.tcp://localhost:8700/UfoService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="8d04c4eb-2da1-44eb-81c0-42cc6524f674" SourceId="1" SourceUrl="net.tcp://localhost:8700/UfoService/mex" />
+    <MetadataFile FileName="UfoService.xsd" MetadataType="Schema" ID="0ad5efe6-f995-449d-b59f-9425a83da664" SourceId="1" SourceUrl="net.tcp://localhost:8700/UfoService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
